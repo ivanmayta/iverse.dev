@@ -5,9 +5,9 @@ import Projects from "@/components/Projects"
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <Hero /> 
-            <Projects />
+        <main className="flex min-h-screen flex-col justify-between ">
+            <Hero />
+            <Projects className="w-full max-w-3xl mx-auto" />
             <article>Personal data</article>
             <article>Projects</article>
             <article>Projects</article>
