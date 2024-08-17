@@ -22,14 +22,14 @@ export default function Header() {
         },
     ]
     return (
-        <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-            <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+        <header className="fixed top-0 z-20 flex items-center justify-center w-full mx-auto mt-2">
+            <nav className="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
                 {navItems.map((link) => {
                     return (
                         <a
                             key={link.label}
                             href={link.url}
-                            class="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-800 dark:hover:text-gray-100 rounded-full"
+                            className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-800 dark:hover:text-gray-100 rounded-full"
                         >
                             {link.title}
                         </a>
