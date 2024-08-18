@@ -3,8 +3,7 @@ import "./globals.css"
 import Header from "@/components/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 //importar logos de vercel y next
-
-
+import Image from "next/image"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
