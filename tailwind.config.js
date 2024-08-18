@@ -24,12 +24,17 @@ module.exports = {
             },
         },
         extend: {
+            fontSize: {
+                pharagraph:
+                    "clamp(1.125rem, calc(1.04211rem + .41447vw), 1.44rem);",
+            },
             colors: {
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                highlight: "hsl(var(--highlight))",
                 primary: {
                     DEFAULT: "hsl(var(--primary))",
                     foreground: "hsl(var(--primary-foreground))",
@@ -73,10 +78,19 @@ module.exports = {
                     from: { height: "var(--radix-accordion-content-height)" },
                     to: { height: "0" },
                 },
+                "shimmer-btn": {
+                    from: {
+                        backgroundPosition: "0 0",
+                    },
+                    to: {
+                        backgroundPosition: "-200% 0",
+                    },
+                },
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
+                "shimmer-btn": "shimmer-btn 2s linear infinite",
             },
         },
     },
