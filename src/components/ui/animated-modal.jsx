@@ -7,10 +7,9 @@ import React, {
     useEffect,
     useRef,
     useState,
-    
 } from "react"
 
-const ModalContext = createContext("hello")
+const ModalContext = createContext()
 
 export const ModalProvider = ({ children }) => {
     const [open, setOpen] = useState(false)
@@ -117,7 +116,7 @@ export const ModalBody = ({ children, className }) => {
 
 export const ModalContent = ({ children, className }) => {
     return (
-        <div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
+        <div className={cn("flex flex-col flex-1 p-8 md:p-10 bg-background dark:bg-background", className)}>
             {children}
         </div>
     )
