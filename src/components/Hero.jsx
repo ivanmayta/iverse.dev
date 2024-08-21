@@ -33,7 +33,7 @@ export default function Hero() {
                         width="400"
                         height="400"
                         className="relative right-0.5 top-0.5"
-                        src="/images/jisoo.webp"
+                        src="/image/jisoo.webp"
                         alt="Avatar"
                         loading="eager"
                         formats={["avif", "webp", "png"]}
@@ -67,7 +67,7 @@ export default function Hero() {
                             </span>
                             Disponible
                         </button>
-                        <span class="">|</span>
+                        <span>|</span>
                         <FloatingIcon />
                     </div>
                 </div>
