@@ -3,37 +3,37 @@ import { BackgroundBeams } from "./ui/background-beams"
 import { Highlight } from "./ui/hero-highlight"
 import Image from "next/image"
 import { FloatingIcon } from "./FloatingIcon"
-import { montserrat } from "@/fonts/montserrat"
 import { Onest } from "next/font/google"
 const onest = Onest({ subsets: ["latin"], weight: "300" })
+import { data } from "../data.js"
 
 export default function Hero() {
+    const { name, label, image } = data.basics
     return (
         <section className="mx-auto max-w-screen-lg  content-center px-4 xs:px-6 sm:px-8">
             <header className="relative flex flex-row-reverse flex-wrap-reverse justify-end sm:flex-nowrap [@media(width>=37rem)]:flex-row [@media(width>=37rem)]:justify-between">
                 <div>
                     <h1 className="text-balance font-header">
                         <span className="block text-4xl font-extrabold tracking-wide opacity-90">
-                            Hey! I m
+                            ¡Hola! Soy
                             <Highlight className="text-black dark:text-white">
-                                {" "}
-                                Ivan Mayta.
+                                {name}
                             </Highlight>
                         </span>
                     </h1>
 
                     <p className="mt-4 block text-2xl font-bold text-foreground/50">
-                        I am a <strong>Software </strong>
-                        Developer
+                        {label}
+                        <strong>Software</strong>
                     </p>
                 </div>
 
-                <div className="-mt-2 mb-6 mr-10 aspect-square size-16 min-h-16 min-w-16 overflow-clip rounded-full bg-white object-cover xs:min-h-24 xs:min-w-24 sm:mb-0 md:-mt-4 md:min-h-28 md:min-w-28 lg:-mt-2 2xl:-mt-0 [@media(width>=37rem)]:mr-14">
+                <div className="-mt-2 mb-6 mr-10 aspect-square size-16 min-h-16 min-w-16 overflow-clip rounded-full  object-cover xs:min-h-24 xs:min-w-24 sm:mb-0 md:-mt-4 md:min-h-28 md:min-w-28 lg:-mt-2 2xl:-mt-0 [@media(width>=37rem)]:mr-14">
                     <Image
                         width="400"
                         height="400"
-                        className="relative right-0.5 top-0.5"
-                        src="/image/jisoo.webp"
+                        className=""
+                        src={image}
                         alt="Avatar"
                         loading="eager"
                         formats={["avif", "webp", "png"]}
@@ -45,17 +45,21 @@ export default function Hero() {
                 <p
                     className={`${onest.className} mt-12  max-w-[90%] text-pretty text-left text-lg lg:text-xl text-foreground/65 xs:text-lg  leading-8"`}
                 >
-                    Especializado en desarrollo de videojuegos, pero también
-                    apasionado por el desarrollo web. Con +6 años de experiencia
-                    programando y
-                    <strong> +4 años de el experiencia profesional</strong>,
-                    estoy
-                    <b>abierto a oportunidades</b> en la industria de
-                    videojuegos, aunque actualmente me encuentro
-                    <strong>
-                        {" "}
-                        en busca activa de un puesto como desarrollador backend
-                    </strong>
+                    {"Estudiante de "}
+                    <strong>Ingeniería de Software</strong>
+                    {" con buena formación académica en el "}
+                    <strong>Bachillerato Internacional,</strong>
+                    {
+                        " donde adquirí conocimientos en Tecnologías de la Información en una Sociedad Global "
+                    }
+                    <strong>(TISG) e inglés.</strong>
+                    {
+                        "  Me apasiona el desarrollo de software y he elaborado proyectos "
+                    }
+                    <strong>web, móviles y de inteligencia de negocios,</strong>
+                    {
+                        " aplicando metodologías ágiles como Scrum y Kanban. Busco aplicar y ampliar mis habilidades en un entorno innovador."
+                    }
                 </p>
 
                 <div className="mt-8">
