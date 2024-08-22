@@ -11,12 +11,14 @@ import {
     ModalContent,
     ModalFooter,
 } from "./ui/animated-modal"
+import { CodeIcon } from "@/icons/CodeIcon"
 
 export default function Projects({ className }) {
     const { projects } = data
     return (
         <article className={cn(className)}>
-            <h1 className="text-2xl pb-12 lg:text-3xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
+            <h1 className=" flex flex-row items-center text-2xl pb-12 lg:text-3xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
+                <CodeIcon className="w-8 h-8 mr-2" />
                 Proyectos
             </h1>
             <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
@@ -29,7 +31,7 @@ export default function Projects({ className }) {
 }
 
 function Project({ project }) {
-    const { name, description, images, url, type } = project
+    const { name, description, images, url, type, icon, highlights } = project
     return (
         <div>
             <Modal>
@@ -45,7 +47,7 @@ function Project({ project }) {
                         </div>
                         <div className="flex flex-1 justify-center w-full aspect-square overflow-hidden rounded-lg mt-4 ">
                             <Image
-                                src="/image/jisoo.webp"
+                                src={images[1] || "/image/jisoo.webp"}
                                 alt="jisoo"
                                 width="500"
                                 height="500"
@@ -93,7 +95,31 @@ function Project({ project }) {
                                     </motion.div>
                                 ))}
                         </div>
+
+                        <div className="py-10 flex flex-wrap gap-x-4 gap-y-6 items-start justify-start max-w-sm mx-auto">
+                            {highlights &&
+                                highlights.map((highlight, idx) => (
+                                    <div
+                                        key={highlight.name}
+                                        className="flex  items-center justify-center"
+                                    >
+                                        {highlight.icon}
+                                        <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                                            {highlight.name}
+                                        </span>
+                                    </div>
+                                ))}
+                        </div>
                     </ModalContent>
+
+                    <ModalFooter className="gap-4">
+                        <button className="px-2 py-1 bg-gray-200 text-black dark:bg-black dark:border-black dark:text-white border border-gray-300 rounded-md text-sm w-28">
+                            Cancel
+                        </button>
+                        <button className="bg-black text-white dark:bg-white dark:text-black text-sm px-2 py-1 rounded-md border border-black w-28">
+                            Book Now
+                        </button>
+                    </ModalFooter>
                 </ModalBody>
             </Modal>
         </div>
