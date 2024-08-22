@@ -34,7 +34,9 @@ export const PinContainer = ({
                 )}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                onClick={() => {setOpen(true)}}
+                onClick={() => {
+                    setOpen(true)
+                }}
             >
                 <div
                     style={{
@@ -47,9 +49,14 @@ export const PinContainer = ({
                         style={{
                             transform: transform,
                         }}
-                        className="absolute left-1/2   w-full top-1/2  h-full flex justify-center items-center  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+                        className="absolute left-1/2   w-full top-1/2  h-full flex justify-center items-center  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-background border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
                     >
-                        <div className={cn(" relative z-50 w-full h-full ", className)}>
+                        <div
+                            className={cn(
+                                " relative z-50 w-full h-full ",
+                                className
+                            )}
+                        >
                             {children}
                         </div>
                     </div>
