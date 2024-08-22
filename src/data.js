@@ -287,6 +287,7 @@ export const data = {
     projects: [
         {
             name: "izimport.com",
+            type: "Web",
             isActive: true,
             description:
                 "Plataforma web que facilita el seguimiento de envíos de DHL y la cotización de importaciones simplificadas en Perú",
@@ -294,13 +295,14 @@ export const data = {
             url: "https://izimport.vercel.app/",
             github: "https://github.com/ivanmayta",
             images: [
-                "https://i.imgur.com/ItHcq7o.jpeg",
-                "https://i.imgur.com/55GM3XZ.jpeg",
-                "https://i.imgur.com/tcNJxoW.jpeg",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
             ],
         },
         {
             name: "Importa Facil",
+            type: "App Móvil",
             isActive: true,
             description:
                 "Aplicación móvil que permite a los usuarios rastrear paquetes de DHL y cotizar importaciones simplificadas en Perú.",
@@ -315,22 +317,23 @@ export const data = {
             url: "https://play.google.com/store/apps/details?id=com.importa.facil",
             github: "https://github.com/ivanmayta",
             images: [
-                "https://i.imgur.com/ItHcq7o.jpeg",
-                "https://i.imgur.com/55GM3XZ.jpeg",
-                "https://i.imgur.com/tcNJxoW.jpeg",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
             ],
         },
         {
             name: "Perú Compras",
+            type: "Business Intelligence",  
             description:
                 "Data warehouse para optimizar la toma de decisiones informadas, aumentar la transparencia y mejorar la eficiencia en la gestión y uso de recursos públicos.",
             highlights: ["Business Intelligence", "Power BI", "ETL", "Dax"],
             url: "https://ivanmayta.vercel.app",
             github: "https://github.com/ivanmayta",
             images: [
-                "https://i.imgur.com/ItHcq7o.jpeg",
-                "https://i.imgur.com/55GM3XZ.jpeg",
-                "https://i.imgur.com/tcNJxoW.jpeg",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
+                "/image/jisoo.webp",
             ],
         },
     ],

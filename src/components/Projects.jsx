@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils"
 import { PinContainer } from "./ui/3d-pin"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { data } from "../data"
 
 import {
     Modal,
@@ -11,40 +12,15 @@ import {
     ModalFooter,
 } from "./ui/animated-modal"
 
-const PROYECTS = [
-    {
-        title: "Proyecto 1",
-        description:
-            "Loerem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/jisoo.webp",
-        images: ["/image/jisoo.webp", "/image/jisoo.webp", "/image/jisoo.webp"],
-        href: "/proyecto-1",
-    },
-    {
-        title: "Proyecto 2",
-        description:
-            "Loroem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/jisoo.webp",
-        images: ["/image/jisoo.webp", "/image/jisoo.webp", "/image/jisoo.webp"],
-        href: "/proyecto-2",
-    },
-    {
-        title: "Proyecto 3",
-        description:
-            "Loroem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/jisoo.webp",
-        images: ["/image/jisoo.webp", "/image/jisoo.webp", "/image/jisoo.webp"],
-        href: "/proyecto-3",
-    },
-]
 export default function Projects({ className }) {
+    const { projects } = data
     return (
         <article className={cn(className)}>
-            <h1 className="text-2xl lg:text-3xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
+            <h1 className="text-2xl pb-12 lg:text-3xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
                 Proyectos
             </h1>
             <section className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3">
-                {PROYECTS.map((project, key) => (
+                {projects.map((project, key) => (
                     <Project key={key} project={project} />
                 ))}
             </section>
@@ -53,14 +29,14 @@ export default function Projects({ className }) {
 }
 
 function Project({ project }) {
-    const { title, description, images, image, href } = project
+    const { name, description, images, url, type } = project
     return (
         <div>
             <Modal>
                 <PinContainer title="/ui.aceternity.com">
-                    <div className="flex basis-full overflow-hidden flex-col tracking-tight text-slate-100/50 sm:basis-1/2  w-full h-full p-4">
+                    <div className=" flex cursor-pointer basis-full overflow-hidden flex-col tracking-tight text-slate-100/50 sm:basis-1/2  w-full h-full p-4">
                         <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
-                            {title}
+                            {name}
                         </h3>
                         <div className="text-base !m-0 !p-0 font-normal">
                             <span className="text-slate-500 ">
@@ -82,11 +58,10 @@ function Project({ project }) {
                 <ModalBody>
                     <ModalContent>
                         <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold text-center">
-                            {title}
+                            {name}{" "}
                             <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200">
-                                Web
+                                {type}
                             </span>{" "}
-                            now! ✈️
                         </h4>
                         <div className="flex justify-center items-center">
                             {images &&

@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
                 >
                     <Header />
                     {children}
-                    <footer className="flex items-center justify-center p-4">
+                    <footer className="flex items-center justify-center p-4 pt-12">
                         Made with ❤️ by Ivan Mayta
                     </footer>
                 </ThemeProvider>
