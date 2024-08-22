@@ -1,6 +1,18 @@
 import { IconBrandGithub, IconBrandX } from "@tabler/icons-react"
 import { IconCv } from "./icons/IconCv"
 import { IconLinkedIn } from "./icons/IconLinkedIn"
+import { AndroidEstudio } from "./icons/AndroidStudio"
+import { Kotlin } from "./icons/Kotlin"
+import { Dhl } from "./icons/Dhl"
+import { ExchangeRates } from "./icons/ExchangeRates"
+import { Analytics } from "./icons/Analytics"
+import { Business } from "./icons/Business"
+import { PowerBi } from "./icons/PowerBi"
+import { Etl } from "./icons/Etl"
+import { Nextjs } from "./icons/Nextjs"
+import { Reactjs } from "./icons/Reactjs"
+import { ShadCn } from "./icons/ShadCn"
+import { Tailwind } from "./icons/Tailwind"
 
 export const data = {
     basics: {
@@ -232,7 +244,7 @@ export const data = {
             ],
         },
         {
-            name: "Android",
+            name: "Android Studio",
             level: "Avanzado",
             keywords: [
                 "Desarrollo Web",
@@ -291,7 +303,38 @@ export const data = {
             isActive: true,
             description:
                 "Plataforma web que facilita el seguimiento de envíos de DHL y la cotización de importaciones simplificadas en Perú",
-            highlights: ["Next.js", "React", "Shadcn", "API DHL"],
+            highlights: [
+                {
+                    name: "Next.js",
+                    icon: (
+                        <Nextjs className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "React",
+                    icon: (
+                        <Reactjs className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "Shadcn",
+                    icon: (
+                        <ShadCn className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "API DHL",
+                    icon: (
+                        <Dhl className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "Tailwind",
+                    icon: (
+                        <Tailwind className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+            ],
             url: "https://izimport.vercel.app/",
             github: "https://github.com/ivanmayta",
             images: [
@@ -299,6 +342,9 @@ export const data = {
                 "/image/jisoo.webp",
                 "/image/jisoo.webp",
             ],
+            icon: (
+                <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+            ),
         },
         {
             name: "Importa Facil",
@@ -307,34 +353,85 @@ export const data = {
             description:
                 "Aplicación móvil que permite a los usuarios rastrear paquetes de DHL y cotizar importaciones simplificadas en Perú.",
             highlights: [
-                "+100 descargas",
-                "kotlin",
-                "Android Studio",
-                "Retrofit",
-                "Api DHL",
-                "Api Exchange Rates",
+                {
+                    name: "+100 Descargas",
+                    icon: (
+                        <Analytics className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "Android Studio",
+                    icon: (
+                        <AndroidEstudio className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+
+                {
+                    name: "Kotlin",
+                    icon: (
+                        <Kotlin className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "API DHL",
+                    icon: (
+                        <Dhl className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "Api Exchange Rate",
+                    icon: (
+                        <ExchangeRates className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
             ],
             url: "https://play.google.com/store/apps/details?id=com.importa.facil",
             github: "https://github.com/ivanmayta",
             images: [
-                "/image/jisoo.webp",
-                "/image/jisoo.webp",
-                "/image/jisoo.webp",
+                "/images/onehundred.png",
+                "/images/portada.png",
+                "/images/activities.png",
             ],
+            icon: (
+                <AndroidEstudio className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+            ),
         },
         {
             name: "Perú Compras",
-            type: "Business Intelligence",  
+            type: "Business Intelligence",
             description:
                 "Data warehouse para optimizar la toma de decisiones informadas, aumentar la transparencia y mejorar la eficiencia en la gestión y uso de recursos públicos.",
-            highlights: ["Business Intelligence", "Power BI", "ETL", "Dax"],
+            highlights: [
+                {
+                    name: "Business Intelligence",
+                    icon: (
+                        <Business className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+
+                {
+                    name: "Power BI",
+                    icon: (
+                        <PowerBi className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "ETL",
+                    icon: (
+                        <Etl className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+            ],
             url: "https://ivanmayta.vercel.app",
             github: "https://github.com/ivanmayta",
             images: [
-                "/image/jisoo.webp",
-                "/image/jisoo.webp",
-                "/image/jisoo.webp",
+                "/images/dashboard2.png",
+                "/images/dashboard.png",
+                "/images/starsqueme.png",
             ],
+            icon: (
+                <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+            ),
         },
     ],
 }
