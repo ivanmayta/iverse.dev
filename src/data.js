@@ -1,7 +1,12 @@
+import { IconBrandGithub, IconBrandX } from "@tabler/icons-react"
+import { IconCv } from "./icons/IconCv"
+import { IconLinkedIn } from "./icons/IconLinkedIn"
+
 export const data = {
     basics: {
         name: "Ivan Mayta",
         label: `Soy desarrollador de `,
+        status: "Disponible para trabajar",
         image: "/me.gif",
         email: "ivan.mayta.dev@gmail.com",
         phone: "+51 926786317",
@@ -20,16 +25,33 @@ export const data = {
                 network: "LinkedIn",
                 username: "iverse",
                 url: "https://www.linkedin.com/in/iverse/",
+                icon: (
+                    <IconLinkedIn className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                ),
             },
             {
                 network: "X",
                 username: "ivanmayta_",
                 url: "https://x.com/ivanmayta_",
+                icon: (
+                    <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                ),
             },
             {
                 network: "GitHub",
                 username: "ivanmayta",
                 url: "https://github.com/ivanmayta",
+                icon: (
+                    <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                ),
+            },
+            {
+                network: "cv",
+                username: "Ivan Mayta",
+                url: "https://mayta.me",
+                icon: (
+                    <IconCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                ),
             },
         ],
     },

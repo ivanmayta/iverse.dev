@@ -8,7 +8,7 @@ const onest = Onest({ subsets: ["latin"], weight: "300" })
 import { data } from "../data.js"
 
 export default function Hero() {
-    const { name, label, image } = data.basics
+    const { name, label, image, status, profiles } = data.basics
     return (
         <section className="mx-auto max-w-screen-lg  content-center px-4 xs:px-6 sm:px-8">
             <header className="relative flex flex-row-reverse flex-wrap-reverse justify-end sm:flex-nowrap [@media(width>=37rem)]:flex-row [@media(width>=37rem)]:justify-between">
@@ -69,10 +69,10 @@ export default function Hero() {
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 animate-duration-[1000ms]"></span>
                                 <span className="relative inline-flex h-[0.7em] w-[0.7em] rounded-full bg-green-500"></span>
                             </span>
-                            Disponible
+                            {status}
                         </button>
                         <span>|</span>
-                        <FloatingIcon />
+                        <FloatingIcon profiles={profiles} />
                     </div>
                 </div>
             </div>
