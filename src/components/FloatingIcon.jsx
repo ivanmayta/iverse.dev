@@ -18,6 +18,8 @@ export function FloatingIcon({ profiles }) {
                         >
                             {profile.icon}
                         </Link>
+
+                        
                     </li>
                 )
             })}

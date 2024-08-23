@@ -4,7 +4,7 @@ import { Highlight } from "./ui/hero-highlight"
 import Image from "next/image"
 import { FloatingIcon } from "./FloatingIcon"
 import { Onest } from "next/font/google"
-const onest = Onest({ subsets: ["latin"], weight: "300" })
+const onest = Onest({ subsets: ["latin"], weight: "400" })
 import { data } from "../data.js"
 
 export default function Hero() {
