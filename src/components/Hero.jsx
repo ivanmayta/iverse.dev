@@ -3,9 +3,8 @@ import { BackgroundBeams } from "./ui/background-beams"
 import { Highlight } from "./ui/hero-highlight"
 import Image from "next/image"
 import { FloatingIcon } from "./FloatingIcon"
-import { Onest } from "next/font/google"
-const onest = Onest({ subsets: ["latin"], weight: "400" })
 import { data } from "../data.js"
+import { onest } from "../fonts/onest.js"
 
 export default function Hero() {
     const { name, label, image, status, profiles } = data.basics
@@ -43,7 +42,7 @@ export default function Hero() {
 
             <div>
                 <p
-                    className={`${onest.className} mt-12  max-w-[90%] text-pretty text-left text-lg lg:text-xl text-foreground/65 xs:text-lg  leading-8"`}
+                    className={`${onest.className} mt-12  max-w-full md:max-w-[90%] text-pretty text-left text-lg lg:text-xl text-foreground/65 xs:text-lg  leading-8"`}
                 >
                     {"Estudiante de "}
                     <strong>Ingeniería de Software</strong>
@@ -63,7 +62,7 @@ export default function Hero() {
                 </p>
 
                 <div className="mt-8">
-                    <div className="mt-2 flex flex-row items-center gap-x-2 ">
+                    <div className="mt-2 flex flex-col items-center gap-x-2 sm:flex-row ">
                         <button className="inline-flex h-12 animate-shimmer-btn items-center justify-center gap-x-2 rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             <span className="relative flex h-[0.7em] w-[0.7em]">
                                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 animate-duration-[1000ms]"></span>
@@ -71,7 +70,7 @@ export default function Hero() {
                             </span>
                             {status}
                         </button>
-                        <span>|</span>
+
                         <FloatingIcon profiles={profiles} />
                     </div>
                 </div>
