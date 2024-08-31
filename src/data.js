@@ -338,8 +338,8 @@ export const data = {
             url: "https://izimport.vercel.app/",
             github: "https://github.com/ivanmayta",
             images: [
-                "/image/jisoo.webp",
-                "/image/jisoo.webp",
+                "/images/izimport.png",
+                "/images/izimport_cotiza.png",
             ],
             icon: (
                 <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
