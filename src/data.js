@@ -17,13 +17,13 @@ import { Tailwind } from "./icons/Tailwind"
 export const data = {
     basics: {
         name: "Ivan Mayta",
-        label: `Soy desarrollador de `,
-        status: "Disponible para trabajar",
+        label: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software y he elaborado proyectos web, móviles y de inteligencia de negocios",
+        status: "Disponible",
         image: "/me.gif",
         email: "ivan.mayta.dev@gmail.com",
         phone: "+51 926786317",
         url: "https://iverse.vercel.dev",
-        summary:
+        summary:    
             "Estudiante de Ingeniería de Software con buena formación académica en el Bachillerato Internacional, donde adquirí conocimientos en Tecnologías de la Información en una Sociedad Global (TISG) e inglés. Me apasiona el desarrollo de software y he elaborado proyectos web, móviles y de inteligencia de negocios, aplicando metodologías ágiles como Scrum y Kanban. Busco aplicar y ampliar mis habilidades en un entorno innovador.",
         location: {
             address: "",
@@ -292,13 +292,13 @@ export const data = {
     ],
     references: [
         {
-            name: "Jane Doe",
+            name: "Midu.dev",
             reference: "Reference…",
         },
     ],
     projects: [
         {
-            name: "Izimport.com",
+            name: "izimport.com",
             type: "Web",
             isActive: true,
             description:
@@ -337,16 +337,13 @@ export const data = {
             ],
             url: "https://izimport.vercel.app/",
             github: "https://github.com/ivanmayta",
-            images: [
-                "/images/izimport.png",
-                "/images/izimport_cotiza.png",
-            ],
+            images: ["/images/izimport.png", "/images/izimport_cotiza.png"],
             icon: (
                 <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
             ),
         },
         {
-            name: "Importa Facil",
+            name: "importa Facil",
             type: "App Móvil",
             isActive: true,
             description:
@@ -386,10 +383,7 @@ export const data = {
             ],
             url: "https://play.google.com/store/apps/details?id=com.importa.facil",
             github: "https://github.com/ivanmayta",
-            images: [
-                "/images/onehundred.png",
-                "/images/portada.png",
-            ],
+            images: ["/images/100.jpg", "/images/portada.png"],
             icon: (
                 <AndroidEstudio className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
             ),
@@ -422,10 +416,7 @@ export const data = {
             ],
             url: "https://ivanmayta.vercel.app",
             github: "https://github.com/ivanmayta",
-            images: [
-                "/images/dashboard2.png",
-                "/images/dashboard.png",
-            ],
+            images: ["/images/dashboard.png","/images/dashboard2.png"],
             icon: (
                 <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
             ),
