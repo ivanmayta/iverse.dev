@@ -2,17 +2,17 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
-const inter = Inter({ subsets: ["latin"] })
+import Footer from "@/components/Footer"
 
 export const metadata = {
-    title: "Iverse-Portafolio Personal",
-    description: "Portafolio de Ivan Mayta",
+    title: "iverse.dev: website de Ivan Mayta",
+    description: "Website personal de Ivan Mayta, desarrollador de software",
 }
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
+            <body className="">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="dark"
@@ -21,9 +21,7 @@ export default function RootLayout({ children }) {
                 >
                     <Header />
                     {children}
-                    <footer className="flex items-center justify-center p-4 pt-12">
-                        Made with ❤️ by Ivan Mayta
-                    </footer>
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>
