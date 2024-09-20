@@ -33,7 +33,7 @@
     }
 
     .dark {
-        --background: 240 10% 3.9%;
+        --background: 0 0% 9%;
         --foreground: 0 0% 98%;
         --card: 240 10% 3.9%;
         --card-foreground: 0 0% 98%;
@@ -65,9 +65,11 @@
 @layer base {
     * {
         @apply border-border;
+        box-sizing: border-box;
     }
     body {
         @apply bg-background text-foreground;
+        min-width: 420px;
     }
     strong {
         @apply text-highlight;
