@@ -9,7 +9,7 @@ export default function Hero() {
                 <h2 className="text-balance tracking-wide leading-loose">
                     <span className="block opacity-80 text-foreground/90">
                         ¡Hola! Soy
-                        <Highlight className="text-black dark:text-white">
+                        <Highlight className="text-black font-semibold dark:text-white">
                             {name}
                         </Highlight>
                         {label}

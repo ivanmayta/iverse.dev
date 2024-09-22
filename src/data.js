@@ -17,7 +17,7 @@ import { Tailwind } from "./icons/Tailwind"
 export const data = {
     basics: {
         name: "Ivan Mayta",
-        label: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software y he elaborado proyectos web, móviles y de inteligencia de negocios",
+        label: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software. He elaborado proyectos web, móviles y de inteligencia de negocios",
         status: "Disponible",
         image: "/me.gif",
         email: "ivan.mayta.dev@gmail.com",
@@ -335,7 +335,7 @@ export const data = {
                     ),
                 },
             ],
-            url: "https://izimport.vercel.app/",
+            url: "https://izimport.com",
             github: "https://github.com/ivanmayta",
             images: ["/images/izimport.webp", "/images/izimport_cotiza.webp"],
             icon: (
