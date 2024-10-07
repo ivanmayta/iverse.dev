@@ -1,5 +1,3 @@
-import React from "react"
-
 export function IconoHeart(props) {
     return (
         <svg

@@ -1,4 +1,3 @@
-import { IconBrandGithub, IconBrandX } from "@tabler/icons-react"
 import { IconCv } from "./icons/IconCv"
 import { IconLinkedIn } from "./icons/IconLinkedIn"
 import { AndroidEstudio } from "./icons/AndroidStudio"
@@ -13,6 +12,8 @@ import { Nextjs } from "./icons/Nextjs"
 import { Reactjs } from "./icons/Reactjs"
 import { ShadCn } from "./icons/ShadCn"
 import { Tailwind } from "./icons/Tailwind"
+import { GitHub } from "./icons/GitHub"
+import { XIcon } from "./icons/XIcon"
 
 export const data = {
     basics: {
@@ -46,7 +47,7 @@ export const data = {
                 username: "ivanmayta_",
                 url: "https://x.com/ivanmayta_",
                 icon: (
-                    <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                    <XIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
                 ),
             },
             {
@@ -54,7 +55,7 @@ export const data = {
                 username: "ivanmayta",
                 url: "https://github.com/ivanmayta",
                 icon: (
-                    <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300 " />
+                    <GitHub className="h-full w-full text-neutral-500 dark:text-neutral-300 " />
                 ),
             },
             {
@@ -339,7 +340,7 @@ export const data = {
             github: "https://github.com/ivanmayta",
             images: ["/images/izimport.webp", "/images/izimport_cotiza.webp"],
             icon: (
-                <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <XIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
             ),
         },
         {
@@ -418,7 +419,7 @@ export const data = {
             github: "https://github.com/ivanmayta",
             images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
             icon: (
-                <IconBrandX className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                <XIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
             ),
         },
     ],

@@ -1,5 +1,3 @@
-import React from "react"
-
 export function Dhl(props) {
     return (
         <svg
