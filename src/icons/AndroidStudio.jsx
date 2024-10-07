@@ -5,7 +5,7 @@ export const AndroidEstudio = (props) => {
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
-            stroke-width="2"
+            strokeWidth="2"
             {...props}
         >
             <path
