@@ -1,4 +1,3 @@
-import { Highlight } from "./ui/hero-highlight"
 import { data } from "../data.js"
 
 export default function Hero() {
@@ -6,25 +5,23 @@ export default function Hero() {
     return (
         <section className="mx-auto max-w-4xl  content-center px-8 pt-12">
             <article className="relative flex flex-row-reverse pb-4 flex-wrap-reverse justify-end sm:flex-nowrap [@media(width>=37rem)]:flex-row [@media(width>=37rem)]:justify-between">
-                <h2 className="text-balance tracking-wide leading-loose">
+                <p className="text-balance tracking-wide leading-loose">
                     <span className="block opacity-80 text-foreground/90">
-                        ¡Hola! Soy
-                        <Highlight className="text-black font-semibold dark:text-white">
+                        ¡Hola! Soy{" "}
+                        <b className="relative after:absolute after:bg-neutral-400 after:bottom-0 after:left-0 after:h-px after:w-full after:origin-bottom-left after:scale-x-0 after:animate-[expand_0.5s_ease-in-out_forwards]">
                             {name}
-                        </Highlight>
+                        </b>
                         {label}
                     </span>
-                </h2>
+                </p>
             </article>
 
-            <div>
-                <button className="inline-flex h-8 animate-shimmer-btn items-center justify-center gap-x-2 rounded-md bg-[linear-gradient(110deg,#00FF0000,45%,#141417,70%,#00FF0000)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none">
-                    <span className="relative flex h-[0.7em] w-[0.7em]">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 animate-duration-[1000ms]"></span>
-                        <span className="relative inline-flex h-[0.7em] w-[0.7em] rounded-full bg-green-500"></span>
-                    </span>
-                    {status}
-                </button>
+            <div className=" font-medium inline-flex items-center gap-2 animate-shine bg-[linear-gradient(110deg,#939393,45%,#1e2631,55%,#939393)] bg-[length:200%_100%] text-transparent bg-clip-text">
+                <span className="relative flex h-[0.7em] w-[0.7em]">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75 animate-duration-[1000ms]"></span>
+                    <span className="relative inline-flex h-[0.7em] w-[0.7em] rounded-full bg-green-500"></span>
+                </span>
+                {status}
             </div>
         </section>
     )
