@@ -1,18 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
-"use client"
-
-import { motion } from "framer-motion"
 import { CodeIcon } from "@/icons/CodeIcon"
 import ArrowUp from "@/icons/ArrowUp"
-
 import { data } from "../data"
-import { Onest } from "next/font/google"
-const onest = Onest({ weight: "400", subsets: ["latin"] })
+import CardImage from "./ui/card-image"
 
 const Projects = ({ className, title }) => {
     const { projects } = data
     return (
-        <section className={`${className} `}>
+        <section className={className}>
             <h1 className=" flex flex-row items-center pb-6 text-xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
                 <CodeIcon className="w-8 h-8 mr-2" />
                 {title}
@@ -26,7 +20,7 @@ const Projects = ({ className, title }) => {
 }
 
 function Project({ project }) {
-    const { name, description, images, url, type, icon, highlights } = project
+    const { name, description, images, url, highlights } = project
 
     return (
         <>
@@ -50,7 +44,7 @@ function Project({ project }) {
                     <footer>
                         <div className=" flex flex-wrap gap-x-4 gap-y-4 items-start justify-start max-w-sm ">
                             {highlights &&
-                                highlights.map((highlight, idx) => (
+                                highlights.map((highlight) => (
                                     <div
                                         key={highlight.name}
                                         className="flex  items-center justify-center"
@@ -64,36 +58,7 @@ function Project({ project }) {
                         </div>
                     </footer>
                 </article>
-
-                <div className="w-full md:w-[40%] mx-auto flex justify-center items-center">
-                    {images.map((image, idx) => (
-                        <motion.div
-                            key={"images" + idx}
-                            style={{
-                                rotate: Math.random() * 20 - 10,
-                            }}
-                            whileHover={{
-                                scale: 1.1,
-                                rotate: 0,
-                                zIndex: 100,
-                            }}
-                            whileTap={{
-                                scale: 1.1,
-                                rotate: 0,
-                                zIndex: 100,
-                            }}
-                            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
-                        >
-                            <img
-                                src={image}
-                                alt="bali images"
-                                width="500"
-                                height="500"
-                                className="rounded-lg h-40 w-40  object-cover flex-shrink-0"
-                            />
-                        </motion.div>
-                    ))}
-                </div>
+                <CardImage images={images} />
             </section>
         </>
     )
