@@ -18,7 +18,7 @@ export default function Header() {
                     />
                     <p className="flex flex-col">
                         <span className="font-bold text-base">iverse.dev</span>
-                        <span className="text-xs text-gray-500">
+                        <span className="text-xs text-neutral-400">
                             @iversedev
                         </span>
                     </p>

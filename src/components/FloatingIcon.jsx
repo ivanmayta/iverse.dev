@@ -3,13 +3,13 @@ import Link from "next/link"
 
 export function FloatingIcon({ profiles }) {
     return (
-        <ul className="flex">
+        <ul className="flex gap-2">
             {profiles.map((profile) => {
                 return (
                     <li
-                        className="relative hover:bg-neutral-800 rounded-lg group p-2 hover:transition-all"
+                        className="relative hover:bg-neutral-900  rounded-lg border-l border-b  group p-2 hover:transition-all"
                         key={profile.network}
-                    >   
+                    >
                         <Link
                             key={profile.network}
                             href={profile.url}
