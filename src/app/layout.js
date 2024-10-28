@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider"
 import Footer from "@/components/Footer"
 
 export const metadata = {
-    title: "iverse.dev: website de Ivan Mayta",
+    title: "iversedev",
     description: "Website personal de Ivan Mayta, desarrollador de software",
 }
 
