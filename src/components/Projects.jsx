@@ -2,6 +2,7 @@ import { CodeIcon } from "@/icons/CodeIcon"
 import ArrowUp from "@/icons/ArrowUp"
 import { data } from "../data"
 import CardImage from "./ui/card-image"
+import { Marquee3D } from "./Marquee3D"
 
 const Projects = ({ className, title }) => {
     const { projects } = data
@@ -58,7 +59,8 @@ function Project({ project }) {
                         </div>
                     </footer>
                 </article>
-                <CardImage images={images} />
+                <Marquee3D images={images} />
+                {/* <CardImage images={images} /> */}
             </section>
         </>
     )
