@@ -3,7 +3,7 @@ import { data } from "../data.js"
 export default function Hero() {
     const { name, label, status } = data.basics
     return (
-        <section className="mx-auto max-w-4xl  content-center px-8 pt-12">
+        <section className="mx-auto max-w-3xl  content-center  pt-12">
             <article className="relative flex flex-row-reverse pb-4 flex-wrap-reverse justify-end sm:flex-nowrap [@media(width>=37rem)]:flex-row [@media(width>=37rem)]:justify-between">
                 <p className="text-balance tracking-wide leading-loose">
                     <span className="block opacity-80 text-foreground/90">
