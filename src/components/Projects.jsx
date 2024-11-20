@@ -1,5 +1,4 @@
-import { CodeIcon } from "@/icons/CodeIcon"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, CodeXml } from "lucide-react"
 import { data } from "../data"
 import CardImage from "./ui/card-image"
 import { Marquee3D } from "./Marquee3D"
@@ -9,7 +8,7 @@ const Projects = ({ className, title }) => {
     return (
         <section className={className}>
             <h1 className=" flex flex-row items-center pb-6 text-xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
-                <CodeIcon className="w-8 h-8 mr-2" />
+                <CodeXml className="w-8 h-8 mr-2" />
                 {title}
             </h1>
 
