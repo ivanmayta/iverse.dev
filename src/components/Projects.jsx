@@ -1,6 +1,5 @@
 import { ArrowUpRight, CodeXml } from "lucide-react"
 import { data } from "../data"
-import CardImage from "./ui/card-image"
 import { Marquee3D } from "./Marquee3D"
 
 const Projects = ({ className, title }) => {
