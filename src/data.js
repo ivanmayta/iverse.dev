@@ -1,18 +1,16 @@
 import { Dhl } from "@/icons/Dhl"
 import { ExchangeRates } from "@/icons/ExchangeRates"
 import { Etl } from "@/icons/Etl"
-import { XIcon, IconLinkedIn } from "@/icons/socials"
 import {
     Kotlin,
     Reactjs,
     Tailwind,
     ShadCn,
-    GitHub,
     Nextjs,
     PowerBi,
     AndroidEstudio,
 } from "@/icons/tools"
-import { FileCode, DownloadCloud, Building2 } from "lucide-react"
+import { DownloadCloud, Building2 } from "lucide-react"
 
 export const data = {
     basics: {
@@ -37,27 +35,21 @@ export const data = {
                 network: "LinkedIn",
                 username: "iverse",
                 url: "https://www.linkedin.com/in/iverse/",
-                icon: (
-                    <IconLinkedIn className="w-full h-full text-neutral-400" />
-                ),
             },
             {
                 network: "X",
                 username: "ivanmayta_",
                 url: "https://x.com/ivanmayta_",
-                icon: <XIcon className="h-full w-full text-neutral-400" />,
             },
             {
                 network: "GitHub",
                 username: "ivanmayta",
                 url: "https://github.com/ivanmayta",
-                icon: <GitHub className="h-full w-full text-neutral-400" />,
             },
             {
-                network: "cv",
+                network: "Cv",
                 username: "Ivan Mayta",
                 url: "https://mayta.me",
-                icon: <FileCode className="h-full w-full text-neutral-400" />,
             },
         ],
     },
@@ -332,9 +324,7 @@ export const data = {
             url: "https://izimport.com",
             github: "https://github.com/ivanmayta",
             images: ["/images/izimport.webp", "/images/izimport_cotiza.webp"],
-            icon: (
-                <XIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-2 w-2" />
-            ),
+            icon: "Izimport",
         },
         {
             name: "importa Facil",
@@ -378,9 +368,7 @@ export const data = {
             url: "https://play.google.com/store/apps/details?id=com.importa.facil",
             github: "https://github.com/ivanmayta",
             images: ["/images/100.webp", "/images/portada.webp"],
-            icon: (
-                <AndroidEstudio className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-            ),
+            icon: "Import Facil",
         },
         {
             name: "Perú Compras",
@@ -411,9 +399,7 @@ export const data = {
             url: "https://ivanmayta.vercel.app",
             github: "https://github.com/ivanmayta",
             images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
-            icon: (
-                <XIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
-            ),
+            icon: "Perú Compras",
         },
     ],
 }
