@@ -1,19 +1,18 @@
-import { IconCv } from "./icons/IconCv"
-import { IconLinkedIn } from "./icons/IconLinkedIn"
-import { AndroidEstudio } from "./icons/AndroidStudio"
-import { Kotlin } from "./icons/Kotlin"
 import { Dhl } from "./icons/Dhl"
 import { ExchangeRates } from "./icons/ExchangeRates"
-import { Analytics } from "./icons/Analytics"
-import { Business } from "./icons/Business"
-import { PowerBi } from "./icons/PowerBi"
 import { Etl } from "./icons/Etl"
-import { Nextjs } from "./icons/Nextjs"
-import { Reactjs } from "./icons/Reactjs"
-import { ShadCn } from "./icons/ShadCn"
-import { Tailwind } from "./icons/Tailwind"
-import { GitHub } from "./icons/GitHub"
-import { XIcon } from "./icons/XIcon"
+import { XIcon, IconLinkedIn } from "@/icons/socials"
+import {
+    Kotlin,
+    Reactjs,
+    Tailwind,
+    ShadCn,
+    GitHub,
+    Nextjs,
+    PowerBi,
+    AndroidEstudio,
+} from "./icons/tools"
+import { FileCode, DownloadCloud, Building2 } from "lucide-react"
 
 export const data = {
     basics: {
@@ -46,25 +45,19 @@ export const data = {
                 network: "X",
                 username: "ivanmayta_",
                 url: "https://x.com/ivanmayta_",
-                icon: (
-                    <XIcon className="h-full w-full text-neutral-400" />
-                ),
+                icon: <XIcon className="h-full w-full text-neutral-400" />,
             },
             {
                 network: "GitHub",
                 username: "ivanmayta",
                 url: "https://github.com/ivanmayta",
-                icon: (
-                    <GitHub className="h-full w-full text-neutral-400" />
-                ),
+                icon: <GitHub className="h-full w-full text-neutral-400" />,
             },
             {
                 network: "cv",
                 username: "Ivan Mayta",
                 url: "https://mayta.me",
-                icon: (
-                    <IconCv className="h-full w-full text-neutral-400" />
-                ),
+                icon: <FileCode className="h-full w-full text-neutral-400" />,
             },
         ],
     },
@@ -353,7 +346,7 @@ export const data = {
                 {
                     name: "+100 Descargas",
                     icon: (
-                        <Analytics className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                        <DownloadCloud className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                     ),
                 },
                 {
@@ -398,7 +391,7 @@ export const data = {
                 {
                     name: "Business Intelligence",
                     icon: (
-                        <Business className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                        <Building2 className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                     ),
                 },
 

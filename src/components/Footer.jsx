@@ -1,4 +1,4 @@
-import ArrowUp from "@/icons/ArrowUp"
+import { ArrowUpRight } from "lucide-react"
 import { Heart } from "lucide-react"
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
                 >
                     <Heart className="w-4 text-red-500 group-hover:transform group-hover:animate-pulse" />
                     <span>Made by Ivan Mayta</span>
-                    <ArrowUp className="w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
+                    <ArrowUpRight className="w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
                 </a>
             </div>
 

@@ -1,5 +1,5 @@
 import { CodeIcon } from "@/icons/CodeIcon"
-import ArrowUp from "@/icons/ArrowUp"
+import { ArrowUpRight } from "lucide-react"
 import { data } from "../data"
 import CardImage from "./ui/card-image"
 import { Marquee3D } from "./Marquee3D"
@@ -34,7 +34,7 @@ function Project({ project }) {
                             target="_blank"
                         >
                             <span>{name}</span>
-                            <ArrowUp className=" w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
+                            <ArrowUpRight className=" w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
                         </a>
                     </header>
                     <main className="pb-2">
