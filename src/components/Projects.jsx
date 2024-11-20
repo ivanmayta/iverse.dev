@@ -59,7 +59,6 @@ function Project({ project }) {
                     </footer>
                 </article>
                 <Marquee3D images={images} />
-                {/* <CardImage images={images} /> */}
             </section>
         </>
     )
