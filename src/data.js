@@ -396,7 +396,7 @@ export const data = {
                     ),
                 },
             ],
-            url: "https://ivanmayta.vercel.app",
+            url: "https://github.com/ivanmayta",
             github: "https://github.com/ivanmayta",
             images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
             icon: "Perú Compras",
