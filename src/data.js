@@ -1,6 +1,6 @@
-import { Dhl } from "./icons/Dhl"
-import { ExchangeRates } from "./icons/ExchangeRates"
-import { Etl } from "./icons/Etl"
+import { Dhl } from "@/icons/Dhl"
+import { ExchangeRates } from "@/icons/ExchangeRates"
+import { Etl } from "@/icons/Etl"
 import { XIcon, IconLinkedIn } from "@/icons/socials"
 import {
     Kotlin,
@@ -11,7 +11,7 @@ import {
     Nextjs,
     PowerBi,
     AndroidEstudio,
-} from "./icons/tools"
+} from "@/icons/tools"
 import { FileCode, DownloadCloud, Building2 } from "lucide-react"
 
 export const data = {
