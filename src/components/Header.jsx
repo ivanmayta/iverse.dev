@@ -6,8 +6,8 @@ export default function Header() {
     const { profiles, image } = data.basics
 
     return (
-        <header className="  w-full  mt-2  inset-x-0 sticky top-0 z-50 overflow-x-auto fold:overflow-x-clip">
-            <nav className="flex w-full max-w-3xl  mx-auto items-center justify-between  py-4 backdrop-blur-sm  text-sm font-medium text-gray-600 dark:text-gray-200">
+        <header className="w-full  mt-2  inset-x-0 sticky top-0 z-50 overflow-x-auto fold:overflow-x-clip max-w-4xl mx-auto backdrop-blur-sm">
+            <nav className="flex w-full max-w-3xl  mx-auto items-center justify-between  py-4  text-sm font-medium text-gray-600 dark:text-gray-200">
                 <a
                     href="/"
                     className="flex group justify-center items-center gap-2"
