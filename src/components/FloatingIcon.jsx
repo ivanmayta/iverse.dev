@@ -10,12 +10,12 @@ const NETWORKS = {
 }
 export function FloatingIcon({ profiles }) {
     return (
-        <ul className="flex gap-2">
+        <ul className="flex gap-3">
             {profiles.map((profile) => {
                 const Icon = NETWORKS[profile.network]
                 return (
                     <li
-                        className="relative hover:bg-neutral-900  rounded-lg group p-2 hover:transition-all"
+                        className="relative rounded-lg group py-2 hover:transition-all"
                         key={profile.network}
                     >
                         <Link
@@ -24,7 +24,7 @@ export function FloatingIcon({ profiles }) {
                             target="_blank"
                             className="flex shadow-lg text-current "
                         >
-                            <Icon className="text-neutral-300" />
+                            <Icon className="opacity-60 hover:opacity-100 transition ease-out" />
                         </Link>
                         <span className="absolute top-full -inset-1 transition-all scale-0 rounded bg-background text-xs text-slate-300 group-hover:scale-100 text-center">
                             {profile.network}
