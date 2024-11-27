@@ -14,15 +14,16 @@ import { DownloadCloud, Building2 } from "lucide-react"
 
 export const data = {
     basics: {
-        name: "Ivan Mayta",
-        label: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software. He elaborado proyectos web, móviles y de inteligencia de negocios",
+        name: "Ivan Mayta.",
+        label: "Frontend Developer por Oracle Next Education.",
+        label2: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software. He elaborado proyectos web, móviles y de inteligencia de negocios",
         status: "Disponible",
         image: "/me.gif",
         email: "ivan.mayta.dev@gmail.com",
         phone: "+51 926786317",
         url: "https://iverse.vercel.dev",
         summary:
-            "Estudiante de Ingeniería de Software con buena formación académica en el Bachillerato Internacional, donde adquirí conocimientos en Tecnologías de la Información en una Sociedad Global (TISG) e inglés. Me apasiona el desarrollo de software y he elaborado proyectos web, móviles y de inteligencia de negocios, aplicando metodologías ágiles como Scrum y Kanban. Busco aplicar y ampliar mis habilidades en un entorno innovador.",
+            "Enfocado en el desarrollo de aplicaciones web y móviles, con participación en proyectos académicos de inteligencia de negocios e inteligencia artificial.",
         location: {
             address: "",
             postalCode: "23004",
