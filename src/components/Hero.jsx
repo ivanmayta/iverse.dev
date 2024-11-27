@@ -16,7 +16,7 @@ export default function Hero() {
                         {label}
                     </span>
                 </h1>
-                <span className="block opacity-80 text-foreground/90 md:w-3/4">
+                <span className="block opacity-80 text-foreground/90 md:w-10/12">
                     {summary}
                 </span>
             </article>
