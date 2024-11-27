@@ -1,5 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Personal Website ☕🌠
+
+
+![Vista previa de iverse](https://github.com/user-attachments/assets/0e8849e2-76c2-40ef-b574-4007ec0bc2ea)
 ## Getting Started
 
 First, run the development server:
