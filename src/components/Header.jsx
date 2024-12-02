@@ -10,10 +10,10 @@ export default function Header() {
             <nav className="flex w-full max-w-3xl  mx-auto items-center justify-between  py-4  text-sm font-medium text-gray-600 dark:text-gray-200">
                 <a
                     href="/"
-                    className="flex group justify-center items-center gap-2"
+                    className=" aspect-auto flex group justify-center items-center gap-2"
                 >
                     <img
-                        className="aspect-square size-9  overflow-clip rounded-full  object-cover"
+                        className="size-9  rounded-full  "
                         src={image}
                         alt="icono de perfil"
                         loading="eager"

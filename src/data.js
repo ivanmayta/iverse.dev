@@ -18,7 +18,7 @@ export const data = {
         label: "Frontend Developer por Oracle Next Education.",
         label2: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software. He elaborado proyectos web, móviles y de inteligencia de negocios",
         status: "Disponible",
-        image: "/me.gif",
+        image: "/logo.webp",
         email: "ivan.mayta.dev@gmail.com",
         phone: "+51 926786317",
         url: "https://iverse.vercel.dev",
