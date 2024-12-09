@@ -23,7 +23,7 @@ function Project({ project }) {
 
     return (
         <>
-            <section className="flex flex-col md:flex-row  mx-auto border rounded-lg p-4 mb-8 ">
+            <section className="flex flex-col md:flex-row  mx-auto  border-b border-foreground/10 mb-8 ">
                 <article className="w-full md:w-[60%] space-y-2">
                     <header className="group  gap-[6px] ">
                         <a

@@ -2,6 +2,7 @@ import "./globals.css"
 import Header from "@/components/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Footer from "@/components/Footer"
+import { FlickeringGridBackGround } from "@/components/flickering-grid"
 
 export const metadata = {
     title: "iverse.dev",
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className="px-8">
+            <body className=" w-full relative h-full bg-background px-4">
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="dark"
@@ -19,9 +20,11 @@ export default function RootLayout({ children }) {
                     disableTransitionOnChange
                 >
                     <Header />
+                    
                     {children}
                     <Footer />
                 </ThemeProvider>
+                <FlickeringGridBackGround />
             </body>
         </html>
     )
