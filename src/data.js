@@ -15,15 +15,26 @@ import { DownloadCloud, Building2 } from "lucide-react"
 export const data = {
     basics: {
         name: "Ivan Mayta.",
-        label: "Frontend Developer por Oracle Next Education.",
-        label2: ", bienvenido a mi Website Personal. Me apasiona el desarrollo de software. He elaborado proyectos web, móviles y de inteligencia de negocios",
+        achievements: [
+            { label: "Frontend Developer por Oracle Next Education." },
+            {
+                label: "Como ingeniero de software, he desarrollado proyectos académicos para entornos web, móviles y de escritorio, así como bases de datos, inteligencia artificial e inteligencia de negocios.",
+                english:
+                    "As a software engineer, I have developed academic projects in web, mobile, and desktop applications, as well as in databases, artificial intelligence, and business intelligence.",
+            },
+            {
+                label: "Me han concedido el título de Bachillerato Internacional. Con buen puntaje en ingles y tecnología.",
+                english:
+                    "I have been awarded the International Baccalaureate degree.",
+            },
+        ],
         status: "Disponible",
         image: "/logo.webp",
         email: "ivan.mayta.dev@gmail.com",
         phone: "+51 926786317",
         url: "https://iverse.vercel.dev",
         summary:
-            "Enfocado en el desarrollo de aplicaciones web y móviles, con participación en proyectos académicos de inteligencia de negocios e inteligencia artificial.",
+            "As a software engineer, I have developed academic projects in web, mobile, and desktop applications, as well as in databases, artificial intelligence, and business intelligence.",
         location: {
             address: "",
             postalCode: "23004",
@@ -79,21 +90,11 @@ export const data = {
     education: [
         {
             institution: "Colegio de Alto Rendimiento de Tacna",
-            url: "https://www.uoc.edu/portal/es/index.html",
+            url: "",
             area: "Programa Bachillerato Internacional",
             studyType: "Bachelor",
             startDate: "2018-01-01",
             endDate: "2021-01-01",
-            score: "4.0",
-            courses: ["DB1101 - Basic SQL"],
-        },
-        {
-            institution: "Univeridad Privada Peruano Alemana",
-            url: "https://www.uoc.edu/portal/es/index.html",
-            area: "Ingeniero de Software",
-            studyType: "Bachelor",
-            startDate: "2021-01-01",
-
             score: "4.0",
             courses: ["DB1101 - Basic SQL"],
         },
@@ -324,7 +325,7 @@ export const data = {
             ],
             url: "https://izimport.com",
             github: "https://github.com/ivanmayta",
-            images: ["/images/izimport.webp", "/images/izimport_cotiza.webp"],
+            images: ["/images/izimport.png", "/images/izimport_cotiza.webp"],
             icon: "Izimport",
         },
         {
@@ -370,6 +371,37 @@ export const data = {
             github: "https://github.com/ivanmayta",
             images: ["/images/100.webp", "/images/portada.webp"],
             icon: "Import Facil",
+        },
+        {
+            name: "iSummarize",
+            type: "Business Intelligence",
+            description:
+                "Data warehouse para optimizar la toma de decisiones informadas, aumentar la transparencia y mejorar la eficiencia en la gestión y uso de recursos públicos.",
+            highlights: [
+                {
+                    name: "Business Intelligence",
+                    icon: (
+                        <Building2 className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+
+                {
+                    name: "Power BI",
+                    icon: (
+                        <PowerBi className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+                {
+                    name: "ETL",
+                    icon: (
+                        <Etl className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                    ),
+                },
+            ],
+            url: "https://isummarize.vercel.app/",
+            github: "https://github.com/ivanmayta/iSummarize-strapi",
+            images: ["/images/isummarize.png", "/images/isummarize2.png"],
+            icon: "iSummerize",
         },
         {
             name: "Perú Compras",
