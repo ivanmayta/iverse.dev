@@ -1,7 +1,8 @@
+import { highlightedText } from "@/lib/utils.js"
 import { data } from "../data.js"
 
 export default function Hero() {
-    const { name, label, status, summary } = data.basics
+    const { name, label, status, summary, achievements } = data.basics
     return (
         <section className="mx-auto w-full max-w-3xl  content-center  pt-12">
             <article className="relative flex flex-col gap-2 pb-4 ">
@@ -12,13 +13,32 @@ export default function Hero() {
                             {name}
                         </b>
                     </span>
-                    <span className="block opacity-80 text-foreground/90">
-                        {label}
-                    </span>
                 </h1>
-                <span className="block opacity-80 text-foreground/90 md:w-10/12">
-                    {summary}
-                </span>
+                {achievements.map((achievement, idx) => {
+                    return (
+                        <span
+                            key={idx}
+                            className="block opacity-80 text-foreground/80 md:w-10/12"
+                        >
+                            {highlightedText(
+                                achievement.label,
+                                [
+                                    "Frontend",
+                                    "Developer",
+                                    "software,",
+                                    "engineer,",
+                                    "International",
+                                    "Baccalaureate",
+                                    "Diploma",
+                                    "ingeniero",
+                                    "Bachillerato",
+                                    "Internacional.",
+                                ],
+                                "font-bold"
+                            )}
+                        </span>
+                    )
+                })}
             </article>
 
             <div className=" font-medium inline-flex items-center gap-2 animate-shine bg-[linear-gradient(110deg,#939393,45%,#1e2631,55%,#939393)] bg-[length:200%_100%] text-transparent bg-clip-text">
