@@ -1,9 +1,10 @@
 import { ArrowUpRight, CodeXml } from "lucide-react"
-import { data } from "../data"
 import { Marquee3D } from "./Marquee3D"
+import { projects } from "@/data/projects"
+import React from "react"
+import { Project as TypeProject } from "@/types/projects.type"
 
 const Projects = ({ className, title }) => {
-    const { projects } = data
     return (
         <section className={className}>
             <h1 className=" flex flex-row items-center pb-6 text-xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
@@ -18,7 +19,7 @@ const Projects = ({ className, title }) => {
     )
 }
 
-function Project({ project }) {
+function Project({ project }: { project: TypeProject }) {
     const { name, description, images, url, highlights } = project
 
     return (
@@ -43,17 +44,20 @@ function Project({ project }) {
                     <footer>
                         <div className=" flex flex-wrap gap-x-4 gap-y-4 items-start justify-start max-w-sm ">
                             {highlights &&
-                                highlights.map((highlight) => (
-                                    <div
-                                        key={highlight.name}
-                                        className="flex  items-center justify-center"
-                                    >
-                                        {highlight.icon}
-                                        <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                                            {highlight.name}
-                                        </span>
-                                    </div>
-                                ))}
+                                highlights.map((highlight) => {
+                                    const { name, icon: Icon } = highlight
+                                    return (
+                                        <div
+                                            key={name}
+                                            className="flex  items-center justify-center"
+                                        >
+                                            <Icon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
+                                            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
+                                                {name}
+                                            </span>
+                                        </div>
+                                    )
+                                })}
                         </div>
                     </footer>
                 </article>

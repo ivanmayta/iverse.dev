@@ -1,4 +1,4 @@
-export const Kotlin = (props) => {
+export const Kotlin = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export const Kotlin = (props) => {
     )
 }
 
-export const Nextjs = (props) => {
+export const Nextjs = ({ ...props }) => {
     return (
         <svg
             width="16"
@@ -37,7 +37,7 @@ export const Nextjs = (props) => {
     )
 }
 
-export const Reactjs = (props) => {
+export const Reactjs = ({ ...props }) => {
     return (
         <svg
             width="16"
@@ -62,7 +62,7 @@ export const Reactjs = (props) => {
     )
 }
 
-export const PowerBi = (props) => {
+export const PowerBi = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export const PowerBi = (props) => {
     )
 }
 
-export const ShadCn = (props) => {
+export const ShadCn = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export const ShadCn = (props) => {
     )
 }
 
-export const Tailwind = (props) => {
+export const Tailwind = ({ ...props }) => {
     return (
         <svg
             width="16"
@@ -125,7 +125,7 @@ export const Tailwind = (props) => {
     )
 }
 
-export const AndroidEstudio = (props) => {
+export const AndroidEstudio = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

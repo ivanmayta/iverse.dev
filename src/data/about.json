@@ -1,0 +1,24 @@
+{
+    "hero": {
+        "paragraphs": [
+            {
+                "greeting": "Hola",
+                "tobe": "Soy",
+                "name": "Ivan."
+            },
+            {
+                "specialty": "Frontend Developer ",
+                "course": "por Oracle Next Education."
+            },
+            {
+                "introduction": "Como ",
+                "career": "Ingeniero de software, ",
+                "description": "He desarrollado proyectos académicos para entornos web, móviles y de escritorio, así como bases de datos, algoritmos y estructura de datos, inteligencia artificial e inteligencia de negocios."
+            },
+            {
+                "introduction": "Logré completar con éxito el programa del ",
+                "program": "Bachillerato Internacional."
+            }
+        ]
+    }
+}

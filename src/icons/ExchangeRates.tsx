@@ -1,4 +1,4 @@
-export function ExchangeRates(props) {
+export function ExchangeRates({...props }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

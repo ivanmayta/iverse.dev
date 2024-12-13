@@ -1,4 +1,4 @@
-import Marquee from "@/components/ui/marquee"
+import { Marquee } from "./ui/marquee"
 
 export function Marquee3D({ images }) {
     return (
@@ -18,7 +18,7 @@ export function Marquee3D({ images }) {
                             className="rounded-lg h-40  object-cover flex-shrink-0 aspect-video"
                         />
                     ))}
-                    <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
+                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
                 </Marquee>
                 {/* Marquee */}
             </div>

@@ -71,9 +71,6 @@
         @apply bg-background text-foreground;
         min-width: 420px;
     }
-    strong {
-        @apply text-highlight;
-    }
 }
 
 @keyframes expand {

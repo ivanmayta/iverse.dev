@@ -1,4 +1,4 @@
-export const IconLinkedIn = (props) => {
+export const IconLinkedIn = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export const IconLinkedIn = (props) => {
         </svg>
     )
 }
-export const XIcon = (props) => {
+export const XIcon = ({ ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export const XIcon = (props) => {
     )
 }
 
-export const GitHub = (props) => {
+export const GitHub = ({ ...props }) => {
     return (
         <svg
             {...props}

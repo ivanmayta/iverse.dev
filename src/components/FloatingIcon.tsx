@@ -1,14 +1,18 @@
-import React from "react"
 import Link from "next/link"
 import { FileCode } from "lucide-react"
 import { IconLinkedIn, XIcon, GitHub } from "@/icons/socials"
+import type { SocialLinks } from "@/types/social-links.type"
 const NETWORKS = {
     LinkedIn: IconLinkedIn,
     X: XIcon,
     GitHub,
     Cv: FileCode,
 }
-export function FloatingIcon({ profiles }) {
+export function FloatingIcon({
+    profiles,
+}: {
+    profiles: SocialLinks["socialsLinks"]
+}) {
     return (
         <ul className="flex gap-3">
             {profiles.map((profile) => {

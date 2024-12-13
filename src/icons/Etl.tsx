@@ -1,4 +1,4 @@
-export function Etl(props) {
+export function Etl({...props}) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

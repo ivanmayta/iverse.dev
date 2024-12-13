@@ -1,0 +1,25 @@
+{
+    "socialsLinks": [
+        {
+            "network": "LinkedIn",
+            "username": "iverse",
+            "url": "https://www.linkedin.com/in/iverse/"
+        },
+        {
+            "network": "X",
+            "username": "ivanmayta_",
+            "url": "https://x.com/ivanmayta_"
+        },
+        {
+            "network": "GitHub",
+            "username": "ivanmayta",
+            "url": "https://github.com/ivanmayta"
+        },
+
+        {
+            "network": "Cv",
+            "username": "Ivan Mayta",
+            "url": "https://mayta.me"
+        }
+    ]
+}

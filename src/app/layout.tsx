@@ -9,7 +9,11 @@ export const metadata = {
     description: "Website personal de Ivan Mayta, desarrollador de software",
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode
+}>) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body className=" w-full relative h-full bg-background px-4">
@@ -20,7 +24,7 @@ export default function RootLayout({ children }) {
                     disableTransitionOnChange
                 >
                     <Header />
-                    
+
                     {children}
                     <Footer />
                 </ThemeProvider>

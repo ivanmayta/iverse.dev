@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { FloatingIcon } from "./FloatingIcon"
-import { data } from "../data.js"
+import { FloatingIcon } from "@/components/FloatingIcon"
+import socialLinks from "@/data/social-links.json"
+import type { SocialLinks as TypeSocialLinks } from "@/types/social-links.type"
 
 export default function Header() {
-    const { profiles, image } = data.basics
+    const data: TypeSocialLinks = socialLinks
+    const { socialsLinks: profiles } = data
 
     return (
         <header className="w-full  mt-2  inset-x-0  z-50 overflow-x-auto fold:overflow-x-clip max-w-4xl mx-auto ">
@@ -14,10 +16,9 @@ export default function Header() {
                 >
                     <img
                         className="size-9  rounded-full  "
-                        src={image}
+                        src="/logo.webp"
                         alt="icono de perfil"
                         loading="eager"
-                        formats={["avif", "webp", "png"]}
                     />
                     <p className="flex flex-col">
                         <span className="font-bold text-base">iverse.dev</span>
