@@ -1,81 +1,41 @@
-import {
-    Kotlin,
-    Reactjs,
-    Tailwind,
-    ShadCn,
-    Nextjs,
-    PowerBi,
-    AndroidEstudio,
-} from "@/icons/tools"
-import { DownloadCloud, Building2 } from "lucide-react"
-import { ExchangeRates } from "@/icons/ExchangeRates"
-import { Etl } from "@/icons/Etl"
-import { Dhl } from "@/icons/dhl"
-
 import type { Projects } from "@/types/projects.type"
+import { TAGS as TG } from "@/data/tags-project"
+
 export const projects: Projects = [
     {
         name: "izimport.com",
-        type: "Web",
+        slug: "izimport-com",
+        type: "web",
         isActive: true,
         description:
-            "Plataforma web que facilita el seguimiento de envíos de DHL y la cotización de importaciones simplificadas en Perú",
+            "📦 Seguimiento de envios internacionales por DHL y cotización de importaciones ",
         highlights: [
-            {
-                name: "Next.js",
-                icon: Nextjs,
-            },
-            {
-                name: "React",
-                icon: Reactjs,
-            },
-            {
-                name: "Shadcn",
-                icon: ShadCn,
-            },
-            {
-                name: "API DHL",
-                icon: Dhl,
-            },
-            {
-                name: "Tailwind",
-                icon: Tailwind,
-            },
+            TG.REACT,
+            TG.NEXTJS,
+            TG.TAILWIND,
+            TG.DHL,
+            TG.EXCHANGERATES,
+            TG.SHADCN,
         ],
         url: "https://izimport.com",
-        github: "https://github.com/ivanmayta",
+        github: "https://github.com/izimport.com",
         images: ["/images/izimport.png", "/images/izimport_cotiza.webp"],
         icon: "Izimport",
     },
 
     {
         name: "importa Facil",
-        type: "App Móvil",
+        slug: "importa-facil",
+        type: "mobile",
         isActive: true,
         description:
-            "Aplicación móvil que permite a los usuarios rastrear paquetes de DHL y cotizar importaciones simplificadas en Perú.",
+            "✈️ Seguimiento de envios internacionales por DHL y cotización de importaciones",
         highlights: [
-            {
-                name: "+100 Descargas",
-                icon: DownloadCloud,
-            },
-            {
-                name: "Android Studio",
-                icon: AndroidEstudio,
-            },
-
-            {
-                name: "Kotlin",
-                icon: Kotlin,
-            },
-            {
-                name: "API DHL",
-                icon: Dhl,
-            },
-            {
-                name: "Api Exchange Rate",
-                icon: ExchangeRates,
-            },
+            TG.ANDROID,
+            TG.DOWNLOADCLOUD,
+            TG.DHL,
+            TG.EXCHANGERATES,
+            TG.KOTLIN,
         ],
         url: "https://play.google.com/store/apps/details?id=com.importa.facil",
         github: "https://github.com/ivanmayta",
@@ -84,25 +44,19 @@ export const projects: Projects = [
     },
     {
         name: "iSummarize",
-        type: "Business Intelligence",
+        slug: "isummarize",
+        type: "web",
         isActive: true,
 
         description:
-            "Data warehouse para optimizar la toma de decisiones informadas, aumentar la transparencia y mejorar la eficiencia en la gestión y uso de recursos públicos.",
+            "🎬 Generador de resumenes para videos de youtube con inteligencia artificial",
         highlights: [
-            {
-                name: "Business Intelligence",
-                icon: Building2,
-            },
-
-            {
-                name: "Power BI",
-                icon: PowerBi,
-            },
-            {
-                name: "ETL",
-                icon: Etl,
-            },
+            TG.NEXTJS,
+            TG.REACT,
+            TG.STRAPI,
+            TG.GEMINI,
+            TG.DIGITALOCEAN,
+            TG.POSTGRESQL,
         ],
         url: "https://isummarize.vercel.app/",
         github: "https://github.com/ivanmayta/iSummarize-strapi",
@@ -111,25 +65,12 @@ export const projects: Projects = [
     },
     {
         name: "Perú Compras",
-        type: "Business Intelligence",
+        slug: "peru-compras",
+        type: "bi",
         isActive: true,
         description:
-            "Data warehouse para optimizar la toma de decisiones informadas, aumentar la transparencia y mejorar la eficiencia en la gestión y uso de recursos públicos.",
-        highlights: [
-            {
-                name: "Business Intelligence",
-                icon: Building2,
-            },
-
-            {
-                name: "Power BI",
-                icon: PowerBi,
-            },
-            {
-                name: "ETL",
-                icon: Etl,
-            },
-        ],
+            "📶Data warehouse para la gestión y uso de recursos públicos.",
+        highlights: [TG.BUSINESSINTELLIGENCE, TG.POWERBI, TG.ETL],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
         images: ["/images/dashboard.webp", "/images/dashboard2.webp "],

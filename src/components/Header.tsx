@@ -15,7 +15,7 @@ export default function Header() {
                     className=" aspect-auto flex group justify-center items-center gap-2"
                 >
                     <img
-                        className="size-9  rounded-full  "
+                        className="size-9  rounded-full bg-black dark:bg-transparent"
                         src="/logo.webp"
                         alt="icono de perfil"
                         loading="eager"

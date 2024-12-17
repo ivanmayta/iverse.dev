@@ -2,6 +2,7 @@ import Link from "next/link"
 import { FileCode } from "lucide-react"
 import { IconLinkedIn, XIcon, GitHub } from "@/icons/socials"
 import type { SocialLinks } from "@/types/social-links.type"
+import { ModeToggle } from "./ui/mode-togle"
 const NETWORKS = {
     LinkedIn: IconLinkedIn,
     X: XIcon,
@@ -36,6 +37,7 @@ export function FloatingIcon({
                     </li>
                 )
             })}
+            <ModeToggle />
         </ul>
     )
 }

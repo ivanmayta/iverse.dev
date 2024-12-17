@@ -3,7 +3,8 @@ import React from "react"
 export type Projects = Project[]
 export type Project = {
     name: string
-    type: string
+    slug: string
+    type: "web" | "bi" | "mobile"
     isActive: boolean
     description: string
     highlights: Highlight[]
