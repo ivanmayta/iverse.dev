@@ -19,7 +19,11 @@ export const projects: Projects = [
         ],
         url: "https://izimport.com",
         github: "https://github.com/izimport.com",
-        images: ["/images/izimport.png", "/images/izimport_cotiza.webp"],
+        images: [
+            "/images/izimport-1.webp",
+            "/images/izimport-2.webp",
+            "/images/izimport-3.webp",
+        ],
         icon: "Izimport",
     },
 
