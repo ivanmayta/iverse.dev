@@ -1,5 +1,6 @@
 import { Marquee3D } from "@/components/Marquee3D"
 import { projects } from "@/data/projects"
+import { Commant } from "@/icons/command"
 import Link from "next/link"
 
 export default function IndividualProjects({
@@ -39,20 +40,8 @@ export default function IndividualProjects({
                 className="text-teal-500 flex items-center pb-6 font-semibold underline underline-offset-2"
                 href="/"
             >
-                <svg
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    aria-hidden="true"
-                    className="ml-1 h-4 w-4 stroke-current group-hover:scale-150 transition-transform"
-                >
-                    <path
-                        d="M6.75 5.75 9.25 8l-2.5 2.25"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </svg>
-                cd  . .
+                <Commant className=" stroke-current group-hover:scale-110 transition-transform" />
+                cd . .
             </Link>
         </main>
     )
