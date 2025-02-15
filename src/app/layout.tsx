@@ -26,7 +26,7 @@ export default async function RootLayout({
                     <Header />
 
                     {children}
-                    <hr className="max-w-3xl mx-auto" />
+                    <hr className="max-w-2xl mx-auto" />
                     <Footer />
                 </ThemeProvider>
                 <FlickeringGridBackGround />

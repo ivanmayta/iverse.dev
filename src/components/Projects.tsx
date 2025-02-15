@@ -4,15 +4,22 @@ import React from "react"
 import { Project as TypeProject } from "@/types/projects.type"
 import Link from "next/link"
 import { Commant } from "@/icons/command"
-
+import { Space_Grotesk } from "next/font/google"
+const space = Space_Grotesk({
+    weight: "variable",
+    subsets: ["latin"],
+    style: "normal",
+})
 const Projects = () => {
     return (
-        <section className="mx-auto max-w-3xl content-center pb-8">
-            <h2 className="flex flex-row items-center pb-6 pl-2 text-xl lg:leading-tight tracking-tight font-medium text-black dark:text-white">
+        <section className="mx-auto max-w-2xl content-center ">
+            <h2
+                className={`flex flex-row items-center pb-6 pl-2 text-lg lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
+            >
                 <CodeXml className="w-8 h-8 mr-2" />
-                Proyectos
+                Projects
             </h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-0 gap-x-2">
                 {projects.map((project, key) => {
                     return <Project project={project} key={key} />
                 })}
@@ -38,7 +45,7 @@ function Project({ project }: { project: TypeProject }) {
                     </a>
                 </header>
                 <main className="flex-grow space-y-2 overflow-hidden">
-                    <p className="text-pretty text-left  text-foreground/65">
+                    <p className=" text-left  text-foreground/65">
                         {description}
                     </p>
                     <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start max-w-sm ">
