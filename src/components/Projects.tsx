@@ -19,7 +19,7 @@ const Projects = () => {
                 <CodeXml className="w-8 h-8 mr-2" />
                 Projects
             </h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-2 md:gap-x-0 gap-x-2">
+            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  gap-3">
                 {projects.map((project, key) => {
                     return <Project project={project} key={key} />
                 })}
@@ -33,7 +33,7 @@ function Project({ project }: { project: TypeProject }) {
 
     return (
         <>
-            <article className="flex flex-col w-full  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/40 rounded-xl p-4 ease-in-out duration-200">
+            <article className="flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/40 rounded-xl  ease-in-out duration-200">
                 <header className="group gap-[6px] flex-shrink-0 ">
                     <a
                         className="flex text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] hover:underline"
@@ -71,7 +71,7 @@ function Project({ project }: { project: TypeProject }) {
                         href={`/projects/${slug}`}
                         className="flex hover:underline group items-center text-base"
                     >
-                        <Commant className=" stroke-current group-hover:scale-110 transition-transform" />
+                        <Commant className=" -mx-1 stroke-current group-hover:scale-110 transition-transform" />
                         ver más
                     </Link>
                 </footer>

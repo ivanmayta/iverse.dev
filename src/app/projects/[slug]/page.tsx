@@ -13,7 +13,7 @@ export default function IndividualProjects({
     const { highlights } = project
 
     return (
-        <main className="flex flex-col pt-12 w-full max-w-3xl mx-auto gap-6 min-w-[320px] ">
+        <main className="flex flex-col pt-12 w-full max-w-2xl mx-auto gap-6 min-w-[320px] ">
             <div className="text-start  space-y-6">
                 <h1 className="text-6xl font-bold">{project.name}</h1>
                 <h2>{project.description}</h2>
