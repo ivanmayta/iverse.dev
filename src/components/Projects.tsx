@@ -14,7 +14,7 @@ const Projects = () => {
     return (
         <section className="mx-auto max-w-2xl content-center ">
             <h2
-                className={`flex flex-row items-center pb-6 pl-2 text-lg lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
+                className={`flex flex-row items-center pb-6 text-lg lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
             >
                 <CodeXml className="w-8 h-8 mr-2" />
                 Projects
