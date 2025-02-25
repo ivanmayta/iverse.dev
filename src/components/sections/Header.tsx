@@ -1,12 +1,13 @@
 import TooltipStatus from "@/components/ui/tooltip-status"
-
+import Link from "next/link"
+import { space } from "@/fonts/fonts"
 export default function Header() {
     return (
         <header className="w-full pt-6 flex max-w-2xl mx-auto items-center justify-between ">
-            <nav className="flex text-sm  text-gray-600 dark:text-gray-200">
-                <a
+            <nav className="flex gap-4 text-sm  text-gray-600 dark:text-gray-200">
+                <Link
                     href="/"
-                    className=" aspect-auto flex group justify-center items-center gap-2"
+                    className="flex text-xl font-bold  justify-center items-center"
                 >
                     <img
                         className="size-14  rounded-full  opacity-90"
@@ -14,36 +15,36 @@ export default function Header() {
                         alt="Icon of iverse.dev"
                         loading="eager"
                     />
-                </a>
-                <div className="flex flex-col justify-center">
-                    <h1 className=" text-xl font-bold ">iverse.dev</h1>
-                    <span className=" flex gap-2 font-semibold text-sm text-zinc-500 group-hover:opacity-75 ">
-                        @iversedev
-                        <ul className="relative flex px-2 border rounded-md cursor-pointer">
-                            <TooltipStatus
-                                icon="✨"
-                                text="Turning ideas into reality"
-                            />
-                            <TooltipStatus
-                                icon="🧑🏻‍💻"
-                                text="Building apps with passion"
-                            />
-                            <TooltipStatus icon="☕" text="Love coffe" />
-                            <TooltipStatus
-                                icon="📄"
-                                text="Love write programming posts"
-                            />
-                            <TooltipStatus
-                                icon="🔍"
-                                text="Exploring new tech trends"
-                            />
-                            <TooltipStatus
-                                icon={<AvailabilityStatus />}
-                                text="Available for work"
-                            />
-                        </ul>
-                    </span>
-                </div>
+                    <div>
+                        iverse.dev
+                        <span className=" flex gap-2 font-semibold text-sm text-zinc-500 group-hover:opacity-75 ">
+                            @iversedev
+                            <div className="relative flex px-2 border rounded-md cursor-pointer">
+                                <TooltipStatus
+                                    icon="✨"
+                                    text="Turning ideas into reality"
+                                />
+                                <TooltipStatus
+                                    icon="🧑🏻‍💻"
+                                    text="Building apps with passion"
+                                />
+                                <TooltipStatus icon="☕" text="Love coffe" />
+                                <TooltipStatus
+                                    icon="📄"
+                                    text="Love write programming posts"
+                                />
+                                <TooltipStatus
+                                    icon="🔍"
+                                    text="Exploring new tech trends"
+                                />
+                                <TooltipStatus
+                                    icon={<AvailabilityStatus />}
+                                    text="Available for work"
+                                />
+                            </div>
+                        </span>
+                    </div>
+                </Link>
             </nav>
         </header>
     )
