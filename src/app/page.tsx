@@ -4,7 +4,7 @@ import Projects from "@/components/sections/Projects"
 
 export default function Home() {
     return (
-        <main className="flex flex-col  gap-6 min-w-[320px] ">
+        <main className="space-y-8">
             <Hero />
             <Elsewhere />
             <Projects />
