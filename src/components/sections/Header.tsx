@@ -21,13 +21,21 @@ export default function Header() {
                         @iversedev
                         <ul className="relative flex px-2 border rounded-md cursor-pointer">
                             <TooltipStatus
+                                icon="✨"
+                                text="Turning ideas into reality"
+                            />
+                            <TooltipStatus
                                 icon="🧑🏻‍💻"
-                                text="Enjoy building Apps"
+                                text="Building apps with passion"
                             />
                             <TooltipStatus icon="☕" text="Love coffe" />
                             <TooltipStatus
                                 icon="📄"
                                 text="Love write programming posts"
+                            />
+                            <TooltipStatus
+                                icon="🔍"
+                                text="Exploring new tech trends"
                             />
                             <TooltipStatus
                                 icon={<AvailabilityStatus />}
