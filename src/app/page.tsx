@@ -1,13 +1,12 @@
-import Hero from "@/components/Hero"
-import { Networks } from "@/components/networks"
-import Projects from "@/components/Projects"
+import Hero from "@/components/sections/Hero"
+import { Elsewhere } from "@/components/sections/Elsewhere"
+import Projects from "@/components/sections/Projects"
 
 export default function Home() {
     return (
         <main className="flex flex-col  gap-6 min-w-[320px] ">
             <Hero />
-            <hr className="w-14 mx-auto m-0 p-0" />
-            <Networks />
+            <Elsewhere />
             <Projects />
         </main>
     )
