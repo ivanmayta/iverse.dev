@@ -1,11 +1,6 @@
 import { type HeroData } from "@/types/about.type"
 import es from "@/data/about.json"
-import { Space_Grotesk } from "next/font/google"
-const space = Space_Grotesk({
-    weight: "variable",
-    subsets: ["latin"],
-    style: "normal",
-})
+import { space } from "@/fonts/fonts"
 export default async function Hero() {
     const { paragraphs } = es.hero as { paragraphs: HeroData["paragraphs"] }
 
