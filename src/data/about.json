@@ -8,16 +8,20 @@
             },
             {
                 "specialty": "Frontend Developer ",
-                "course": "por Oracle Next Education."
+                "course": "by Oracle Next Education."
             },
             {
-                "introduction": "Como ",
-                "career": "Ingeniero de software, ",
-                "description": "he desarrollado proyectos académicos para entornos web, móviles, de escritorio, bases de datos, algoritmos y estructura de datos, inteligencia artificial e inteligencia de negocios."
+                "introduction": "As a ",
+                "career": "Software Engineer,",
+                "description": "I have developed academic projects for web, mobile, desktop environments, databases, algorithms and data structures, artificial intelligence, and business intelligence."
             },
             {
-                "introduction": "Logré completar con éxito el programa del ",
-                "program": "Bachillerato Internacional."
+                "introduction": "I successfully completed the ",
+                "program": "International Baccalaureate program."
+            },
+            {
+                "introduction": "Github Fundation",
+                "program": "certified."
             }
         ]
     }

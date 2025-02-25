@@ -8,7 +8,7 @@ export const projects: Projects = [
         type: "web",
         isActive: true,
         description:
-            "📦 Seguimiento de envios internacionales por DHL y cotización de importaciones ",
+            "📦 Tracking international shipments by DHL and import quotes",
         highlights: [
             TG.REACT,
             TG.NEXTJS,
@@ -33,7 +33,7 @@ export const projects: Projects = [
         type: "mobile",
         isActive: true,
         description:
-            "✈️ Seguimiento de envios internacionales por DHL y cotización de importaciones",
+            "✈️Tracking international shipments by DHL and import quotes",
         highlights: [
             TG.ANDROID,
             TG.DOWNLOADCLOUD,
@@ -53,7 +53,7 @@ export const projects: Projects = [
         isActive: true,
 
         description:
-            "🎬 Generador de resumenes para videos de youtube con inteligencia artificial",
+            "🎬Summary generator for YouTube videos with artificial intelligence",
         highlights: [
             TG.NEXTJS,
             TG.REACT,
@@ -73,7 +73,7 @@ export const projects: Projects = [
         type: "bi",
         isActive: true,
         description:
-            "📶Data warehouse para la gestión y uso de recursos públicos.",
+            "📶Data warehouse for the management and use of public resources.",
         highlights: [TG.BUSINESSINTELLIGENCE, TG.POWERBI, TG.ETL],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
