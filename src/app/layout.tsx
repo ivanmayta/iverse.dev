@@ -1,7 +1,7 @@
 import "./globals.css"
-import Header from "@/components/Header"
+import Header from "@/components/sections/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
-import Footer from "@/components/Footer"
+import Footer from "@/components/sections/Footer"
 import { FlickeringGridBackGround } from "@/components/flickering-grid"
 
 export const metadata = {
