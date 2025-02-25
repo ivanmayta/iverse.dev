@@ -1,25 +1,18 @@
-import { ArrowUpRight, ChevronRight, CodeXml } from "lucide-react"
+import { ChartColumnBig, LinkIcon } from "lucide-react"
 import { projects } from "@/data/projects"
 import React from "react"
 import { Project as TypeProject } from "@/types/projects.type"
 import Link from "next/link"
-import { Commant } from "@/icons/command"
-import { Space_Grotesk } from "next/font/google"
-const space = Space_Grotesk({
-    weight: "variable",
-    subsets: ["latin"],
-    style: "normal",
-})
+import {space} from "@/fonts/fonts"
 const Projects = () => {
     return (
-        <section className="mx-auto max-w-2xl content-center ">
+        <section className="group/sub mx-auto max-w-2xl w-full ">
             <h2
-                className={`flex flex-row items-center pb-6 text-lg lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
+                className={`flex group-hover/sub:text-[#9d4cfa] flex-row items-center pb-2 text-xl lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
             >
-                <CodeXml className="w-8 h-8 mr-2" />
-                Projects
+                / Projects
             </h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  gap-3">
+            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  gap-y-2">
                 {projects.map((project, key) => {
                     return <Project project={project} key={key} />
                 })}
@@ -29,26 +22,29 @@ const Projects = () => {
 }
 
 function Project({ project }: { project: TypeProject }) {
-    const { name, description, images, url, highlights, slug } = project
+    const { name, description, url, highlights, slug, github } = project
 
     return (
         <>
-            <article className="flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/40 rounded-xl  ease-in-out duration-200">
-                <header className="group gap-[6px] flex-shrink-0 ">
+            <article className="flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/20 rounded-xl  ease-in-out duration-200">
+                <header className="flex items-center justify-between">
                     <a
-                        className="flex text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] hover:underline"
+                        className="group flex gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] hover:underline"
                         href={url}
                         target="_blank"
                     >
-                        <span>{name}</span>
-                        <ArrowUpRight className=" w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
+                        <LinkIcon className=" w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
+                        <span className="text-base">{name}</span>
                     </a>
+                    <div className="flex items-center gap-1">
+                        <ChartColumnBig className="w-4 opacity-60 duration-200 hover:opacity-100" />
+                    </div>
                 </header>
                 <main className="flex-grow space-y-2 overflow-hidden">
                     <p className=" text-left  text-foreground/65">
                         {description}
                     </p>
-                    <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start max-w-sm ">
+                    <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start">
                         {highlights &&
                             highlights.map((highlight) => {
                                 const { name, icon: Icon } = highlight
@@ -66,12 +62,11 @@ function Project({ project }: { project: TypeProject }) {
                             })}
                     </div>
                 </main>
-                <footer className="text-teal-500 font-semibold  flex-shrink-0">
+                <footer className="hover:text-[#9d4cfa] font-semibold  flex-shrink-0">
                     <Link
                         href={`/projects/${slug}`}
-                        className="flex hover:underline group items-center text-base"
+                        className="group flex hover:underline underline-offset-4 items-center text-base"
                     >
-                        <Commant className=" -mx-1 stroke-current group-hover:scale-110 transition-transform" />
                         ver más
                     </Link>
                 </footer>
