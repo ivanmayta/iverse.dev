@@ -1,9 +1,18 @@
-import { ChartColumnBig, LinkIcon } from "lucide-react"
+import {
+    ChartColumnBig,
+    CircleArrowRight,
+    CircleChevronRight,
+    LaptopMinimal,
+    LinkIcon,
+    PanelsTopLeft,
+    Smartphone,
+} from "lucide-react"
 import { projects } from "@/data/projects"
 import React from "react"
 import { Project as TypeProject } from "@/types/projects.type"
 import Link from "next/link"
-import {space} from "@/fonts/fonts"
+import { space } from "@/fonts/fonts"
+import BadgeTools from "../ui/badge-tools"
 const Projects = () => {
     return (
         <section className="group/sub mx-auto max-w-2xl w-full ">
@@ -12,7 +21,7 @@ const Projects = () => {
             >
                 / Projects
             </h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  gap-y-2">
+            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  ">
                 {projects.map((project, key) => {
                     return <Project project={project} key={key} />
                 })}
@@ -22,8 +31,13 @@ const Projects = () => {
 }
 
 function Project({ project }: { project: TypeProject }) {
-    const { name, description, url, highlights, slug, github } = project
-
+    const { name, description, url, highlights, slug, type } = project
+    const typeIcons = {
+        web: <PanelsTopLeft className="w-4 opacity-60 duration-200 " />,
+        mobile: <Smartphone className="w-4 opacity-60 duration-200 " />,
+        desktop: <LaptopMinimal className="w-4 opacity-60 duration-200 " />,
+        bi: <ChartColumnBig className="w-4 opacity-60 duration-200 " />,
+    }
     return (
         <>
             <article className="flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/20 rounded-xl  ease-in-out duration-200">
@@ -37,7 +51,13 @@ function Project({ project }: { project: TypeProject }) {
                         <span className="text-base">{name}</span>
                     </a>
                     <div className="flex items-center gap-1">
-                        <ChartColumnBig className="w-4 opacity-60 duration-200 hover:opacity-100" />
+                        {typeIcons[type]}
+                        <Link
+                            href={`/projects/${slug}`}
+                            className="group flex hover:underline underline-offset-4 items-center text-base"
+                        >
+                            <CircleChevronRight className="w-4 opacity-60 duration-200 hover:opacity-100" />
+                        </Link>
                     </div>
                 </header>
                 <main className="flex-grow space-y-2 overflow-hidden">
@@ -49,27 +69,15 @@ function Project({ project }: { project: TypeProject }) {
                             highlights.map((highlight) => {
                                 const { name, icon: Icon } = highlight
                                 return (
-                                    <div
+                                    <BadgeTools
                                         key={name}
-                                        className="flex  items-center justify-center"
-                                    >
-                                        <Icon className="mr-1 text-zinc-800 dark:text-zinc-100  h-4 w-4" />
-                                        <span className="text-zinc-800 dark:text-zinc-100  text-sm">
-                                            {name}
-                                        </span>
-                                    </div>
+                                        icon={<Icon className="w-4" />}
+                                        text={name}
+                                    />
                                 )
                             })}
                     </div>
                 </main>
-                <footer className="hover:text-[#9d4cfa] font-semibold  flex-shrink-0">
-                    <Link
-                        href={`/projects/${slug}`}
-                        className="group flex hover:underline underline-offset-4 items-center text-base"
-                    >
-                        ver más
-                    </Link>
-                </footer>
             </article>
         </>
     )
