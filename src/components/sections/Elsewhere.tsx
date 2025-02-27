@@ -14,7 +14,7 @@ export function Elsewhere() {
             <div className="flex text-sm font-normal flex-wrap  gap-3">
                 <BadgeAncores icon={<FileCode width={18} />} url="mayta.me" />
                 <BadgeAncores
-                    icon={<Github width={18} />}
+                      icon={<Github width={18} />}
                     url="github.com/ivanmayta"
                 />
                 <BadgeAncores
