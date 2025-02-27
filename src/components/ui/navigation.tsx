@@ -38,7 +38,7 @@ export default function Navigation() {
                 </Link>
             ))}
             <a
-                className="flex gap-1 items-center text-gray-600 dark:text-gray-200"
+                className="flex gap-1 items-center text-gray-600 dark:text-gray-200 hover:underline"
                 href="https://github.com/ivanmayta/iverse.dev"
                 target="_blank"
             >
