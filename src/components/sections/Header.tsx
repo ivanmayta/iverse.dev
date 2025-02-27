@@ -1,10 +1,11 @@
 import TooltipStatus from "@/components/ui/tooltip-status"
 import Link from "next/link"
-import { space } from "@/fonts/fonts"
+import { GitHub } from "@/icons/socials"
+import Navigation from "../ui/navigation"
 export default function Header() {
     return (
         <header className="w-full pt-6 flex max-w-2xl mx-auto items-center justify-between ">
-            <nav className="flex gap-4 text-sm  text-gray-600 dark:text-gray-200">
+            <div className="flex gap-4 text-sm  text-gray-600 dark:text-gray-200">
                 <Link
                     href="/"
                     className="flex text-xl font-bold  justify-center items-center"
@@ -45,7 +46,8 @@ export default function Header() {
                         </span>
                     </div>
                 </Link>
-            </nav>
+            </div>
+            <Navigation />
         </header>
     )
 }
