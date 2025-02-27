@@ -12,7 +12,7 @@ export default async function Hero() {
     return (
         <section className="mx-auto  w-full max-w-2xl  content-center  pt-12  flex flex-col gap-2 text-lg text-zinc-600 dark:text-zinc-400">
             <h2
-                className={`text-balance text-3xl font-bold text-zinc-800 dark:text-white pb-4 tracking-wide  ${space.className}`}
+                className={` text-[2rem] font-bold text-zinc-800 dark:text-white pb-4 tracking-wider leading-snug  ${space.className}`}
             >
                 <span>Software developer</span>, currendly focused on the web
                 with{" "}
