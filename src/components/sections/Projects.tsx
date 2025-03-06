@@ -1,6 +1,6 @@
+"use client"
 import {
     ChartColumnBig,
-    CircleArrowRight,
     CircleChevronRight,
     LaptopMinimal,
     LinkIcon,
@@ -13,7 +13,10 @@ import { Project as TypeProject } from "@/types/projects.type"
 import Link from "next/link"
 import { space } from "@/fonts/fonts"
 import BadgeTools from "../ui/badge-tools"
+import { usePathname } from "next/navigation"
+
 const Projects = () => {
+    const pathName = usePathname()
     return (
         <section className="group/sub mx-auto max-w-2xl w-full ">
             <h2
@@ -22,15 +25,33 @@ const Projects = () => {
                 / Projects
             </h2>
             <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  ">
-                {projects.map((project, key) => {
-                    return <Project project={project} key={key} />
-                })}
+                {pathName === "/"
+                    ? projects.slice(0, 4).map((project) => {
+                          return (
+                              <Project key={project.name} project={project} />
+                          )
+                      })
+                    : projects.map((project) => {
+                          return (
+                              <Project
+                                  key={project.name}
+                                  project={project}
+                                  showImage={true}
+                              />
+                          )
+                      })}
             </div>
         </section>
     )
 }
 
-function Project({ project }: { project: TypeProject }) {
+function Project({
+    project,
+    showImage,
+}: {
+    project: TypeProject
+    showImage?: boolean
+}) {
     const { name, description, url, highlights, slug, type } = project
     const typeIcons = {
         web: <PanelsTopLeft className="w-4 opacity-60 duration-200 " />,
@@ -61,6 +82,13 @@ function Project({ project }: { project: TypeProject }) {
                     </div>
                 </header>
                 <main className="flex-grow space-y-2 overflow-hidden">
+                    {showImage && (
+                        <img
+                            className="w-full h-48 object-cover rounded-lg aspect-video"
+                            src={project.images[0]}
+                            alt={`Imagen-${project.name}`}
+                        />
+                    )}
                     <p className=" text-left  text-foreground/65">
                         {description}
                     </p>

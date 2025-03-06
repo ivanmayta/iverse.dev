@@ -4,7 +4,7 @@ export type Projects = Project[]
 export type Project = {
     name: string
     slug: string
-    type: "web" | "bi" | "mobile"
+    type: "web" | "bi" | "mobile"| "desktop"| "videogame"
     isActive: boolean
     description: string
     highlights: Highlight[]

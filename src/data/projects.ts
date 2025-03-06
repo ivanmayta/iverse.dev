@@ -8,10 +8,12 @@ export const projects: Projects = [
         type: "web",
         isActive: true,
         description:
-            "📦 Tracking international shipments by DHL and import quotes",
+            "📦 E-commerce product catalog platform for B2B and B2C businesses.",
+
         highlights: [
-            TG.REACT,
             TG.NEXTJS,
+            TG.SUPABASE,
+            TG.REACT,
             TG.TAILWIND,
             TG.DHL,
             TG.EXCHANGERATES,
@@ -36,10 +38,10 @@ export const projects: Projects = [
             "✈️Tracking international shipments by DHL and import quotes",
         highlights: [
             TG.ANDROID,
+            TG.KOTLIN,
             TG.DOWNLOADCLOUD,
             TG.DHL,
             TG.EXCHANGERATES,
-            TG.KOTLIN,
         ],
         url: "https://play.google.com/store/apps/details?id=com.importa.facil",
         github: "https://github.com/ivanmayta",
@@ -74,6 +76,19 @@ export const projects: Projects = [
         isActive: true,
         description:
             "📶Data warehouse for the management and use of public resources.",
+        highlights: [TG.BUSINESSINTELLIGENCE, TG.POWERBI, TG.ETL],
+        url: "https://github.com/ivanmayta",
+        github: "https://github.com/ivanmayta",
+        images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
+        icon: "Perú Compras",
+    },
+    {
+        name: "Up All",
+        slug: "upp-all",
+        type: "videogame",
+        isActive: true,
+        description:
+            "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
         highlights: [TG.BUSINESSINTELLIGENCE, TG.POWERBI, TG.ETL],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",

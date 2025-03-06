@@ -10,6 +10,7 @@ import {
     IconGemini,
     DigitalOcean,
     PostgreSQL,
+    Supabase,
 } from "@/icons/tools"
 
 import { DownloadCloud, Building2 } from "lucide-react"
@@ -81,5 +82,9 @@ export const TAGS = {
     POSTGRESQL: {
         name: "PostgreSQL",
         icon: PostgreSQL,
+    },
+    SUPABASE: {
+        name: "Supabase",
+        icon: Supabase,
     },
 }
