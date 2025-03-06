@@ -1,5 +1,6 @@
 "use client"
 import {
+    ArrowRight,
     ChartColumnBig,
     CircleChevronRight,
     LaptopMinimal,
@@ -19,11 +20,20 @@ const Projects = () => {
     const pathName = usePathname()
     return (
         <section className="group/sub mx-auto max-w-2xl w-full ">
-            <h2
-                className={`flex group-hover/sub:text-[#9d4cfa] flex-row items-center pb-2 text-xl lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
-            >
-                / Projects
-            </h2>
+            <div className="flex items-center justify-between pb-2">
+                <h2
+                    className={`flex group-hover/sub:text-[#9d4cfa] flex-row items-center pb-2 text-xl lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
+                >
+                    / Projects
+                </h2>
+                <Link
+                    href={"/projects"}
+                    className="flex opacity-60 duration-200 hover:opacity-100"
+                >
+                    view all
+                    <ArrowRight className="w-4" />
+                </Link>
+            </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  ">
                 {pathName === "/"
                     ? projects.slice(0, 4).map((project) => {
