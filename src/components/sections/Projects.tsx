@@ -26,13 +26,15 @@ const Projects = () => {
                 >
                     / Projects
                 </h2>
-                <Link
-                    href={"/projects"}
-                    className="flex opacity-60 duration-200 hover:opacity-100"
-                >
-                    view all
-                    <ArrowRight className="w-4" />
-                </Link>
+                {pathName === "/" && (
+                    <Link
+                        href={"/projects"}
+                        className="flex opacity-60 duration-200 hover:opacity-100"
+                    >
+                        view all
+                        <ArrowRight className="w-4" />
+                    </Link>
+                )}
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  ">
                 {pathName === "/"

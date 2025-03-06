@@ -89,10 +89,10 @@ export const projects: Projects = [
         isActive: true,
         description:
             "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
-        highlights: [TG.BUSINESSINTELLIGENCE, TG.POWERBI, TG.ETL],
+        highlights: [TG.UNITY, TG.CSHARP],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
-        images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
+        images: ["/images/up-all-1.png", "/images/dashboard2.webp "],
         icon: "Perú Compras",
     },
 ]

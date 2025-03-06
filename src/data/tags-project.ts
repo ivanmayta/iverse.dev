@@ -11,6 +11,8 @@ import {
     DigitalOcean,
     PostgreSQL,
     Supabase,
+    Unity,
+    Csharp,
 } from "@/icons/tools"
 
 import { DownloadCloud, Building2 } from "lucide-react"
@@ -86,5 +88,13 @@ export const TAGS = {
     SUPABASE: {
         name: "Supabase",
         icon: Supabase,
+    },
+    UNITY: {
+        name: "Unity",
+        icon: Unity,
+    },
+    CSHARP: {
+        name: "",
+        icon: Csharp,
     },
 }
