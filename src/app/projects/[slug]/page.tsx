@@ -36,7 +36,7 @@ export default function IndividualProjects({
                         </span>
                         <span>{project.type}</span>
                     </li>
-                    <li className="flex gap-2 items-center">
+                    <li className="flex gap-2 items-start">
                         <span className="bg-green-500/30 text-green-500 px-2 rounded-sm">
                             STACK
                         </span>
@@ -62,7 +62,13 @@ export default function IndividualProjects({
                         <span className="bg-green-500/30 text-green-500 px-2 rounded-sm">
                             WEBSITE
                         </span>
-                        <span>{project.url}</span>
+                        <a
+                            className="hover:underline text-orange-500"
+                            href={project.url}
+                            target="_blank"
+                        >
+                            {project.url}
+                        </a>
                     </li>
                 </ul>
             </div>
