@@ -4,19 +4,16 @@ import { GitHub } from "@/icons/socials"
 import Navigation from "../ui/navigation"
 export default function Header() {
     return (
-        <header className="w-full space-y-3 pt-6 flex sm:flex-row flex-col max-w-2xl mx-auto items-center justify-between ">
-            <div className="flex gap-4 text-sm  text-gray-600 dark:text-gray-200">
-                <Link
-                    href="/"
-                    className="flex text-xl font-bold  justify-center items-center"
-                >
+        <header className="max-w-2xl mx-auto pt-6 sm:flex sm:justify-between sm:items-center">
+            <div className="flex">
+                <Link href="/" className=" flex">
                     <img
                         className="size-14  rounded-full  opacity-90"
                         src="/logo.webp"
                         alt="Icon of iverse.dev"
                         loading="eager"
                     />
-                    <div>
+                    <div className="text-lg font-bold ">
                         iverse.dev
                         <span className=" flex gap-2 font-semibold text-sm text-zinc-500 group-hover:opacity-75 ">
                             @iversedev

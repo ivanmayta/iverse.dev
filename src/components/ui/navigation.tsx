@@ -22,7 +22,7 @@ export default function Navigation() {
     }
     console.log(isActive(navs[1].href))
     return (
-        <nav className="flex gap-4 justify-between sm:justify-end w-full">
+        <nav className="flex gap-4">
             {navs.map(({ href, label }) => (
                 <Link
                     className={cn({
