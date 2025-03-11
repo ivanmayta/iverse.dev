@@ -3,6 +3,7 @@ import Header from "@/components/sections/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Footer from "@/components/sections/Footer"
 import { FlickeringGridBackGround } from "@/components/flickering-grid"
+import { unstable_ViewTransition as ViewTransition } from "react"
 
 export const metadata = {
     title: "iverse.dev",
@@ -24,8 +25,8 @@ export default async function RootLayout({
                     disableTransitionOnChange
                 >
                     <Header />
+                    <ViewTransition>{children}</ViewTransition>
 
-                    {children}
                     <hr className="max-w-2xl mx-auto my-3" />
                     <Footer />
                 </ThemeProvider>

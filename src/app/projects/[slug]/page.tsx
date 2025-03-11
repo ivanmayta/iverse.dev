@@ -4,12 +4,12 @@ import { Commant } from "@/icons/command"
 import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"
 
-export default function IndividualProjects({
+export default async function IndividualProjects({
     params,
 }: {
     params: { slug: string }
 }) {
-    const { slug } = params
+    const { slug } = await params
     const project = projects.find((p) => p.slug === slug)
     const { highlights } = project
 
