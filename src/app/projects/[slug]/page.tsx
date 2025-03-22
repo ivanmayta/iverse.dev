@@ -75,11 +75,11 @@ export default async function IndividualProjects({
             <Marquee3D images={project.images} />
 
             <Link
-                className="text-teal-500 flex items-center pb-6 font-semibold underline underline-offset-2"
-                href="/"
+                className="group text-teal-300 flex items-center pb-6 font-semibold underline underline-offset-2"
+                href="/projects"
             >
                 <Commant className=" stroke-current group-hover:scale-110 transition-transform" />
-                cd ~
+                cd . .
             </Link>
         </main>
     )

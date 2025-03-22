@@ -30,14 +30,13 @@ export default function Contributions() {
                             </header>
                             <main>
                                 <p className="font-medium">
-                                    🎊 Evento de desarrollo web con javascript,
-                                    organizado por Midudev.
+                                    🎊 Web development event with javascript.
+                                    organized by Midudev.
                                 </p>
                             </main>
                             <footer>
                                 <span className="text-foreground/65">
-                                    Mejorar el diseño de la web basado en el
-                                    Figma.
+                                    Improve web design based on the Figma.
                                 </span>
                             </footer>
                         </article>

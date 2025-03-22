@@ -13,6 +13,7 @@ import {
     Supabase,
     Unity,
     Csharp,
+    Astro,
 } from "@/icons/tools"
 
 import { DownloadCloud, Building2 } from "lucide-react"
@@ -96,5 +97,9 @@ export const TAGS = {
     CSHARP: {
         name: "",
         icon: Csharp,
+    },
+    ASTRO: {
+        name: "Astro",
+        icon: Astro,
     },
 }

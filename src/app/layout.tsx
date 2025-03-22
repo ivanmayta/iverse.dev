@@ -17,21 +17,24 @@ export default async function RootLayout({
 }>) {
     return (
         <html lang="es" suppressHydrationWarning>
-            <body className=" w-full relative h-full bg-background px-4">
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <Header />
-                    <ViewTransition>{children}</ViewTransition>
+            <ViewTransition>
+                <body className=" w-full relative h-full bg-background px-4">
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="dark"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
+                        <Header />
 
-                    <hr className="max-w-2xl mx-auto my-3" />
-                    <Footer />
-                </ThemeProvider>
-                <FlickeringGridBackGround />
-            </body>
+                        {children}
+
+                        <hr className="max-w-2xl mx-auto my-3" />
+                        <Footer />
+                    </ThemeProvider>
+                    <FlickeringGridBackGround />
+                </body>
+            </ViewTransition>
         </html>
     )
 }
