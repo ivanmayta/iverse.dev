@@ -3,6 +3,8 @@ import {
     ArrowRight,
     ChartColumnBig,
     CircleChevronRight,
+    FolderCodeIcon,
+    Gamepad2,
     LaptopMinimal,
     LinkIcon,
     PanelsTopLeft,
@@ -70,36 +72,45 @@ function Project({
         mobile: <Smartphone className="w-4 opacity-60 duration-200 " />,
         desktop: <LaptopMinimal className="w-4 opacity-60 duration-200 " />,
         bi: <ChartColumnBig className="w-4 opacity-60 duration-200 " />,
+        videogame: <Gamepad2 className="w-4 opacity-60 duration-200 " />,
     }
     return (
         <>
-            <article className="flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/20 rounded-xl  ease-in-out duration-200">
+            <article className=" group/image flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/20 rounded-xl  ease-in-out duration-0">
                 <header className="flex items-center justify-between">
                     <a
-                        className="group flex gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] hover:underline"
-                        href={url}
-                        target="_blank"
+                        className=" flex gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] group-hover/image:underline"
+                        href={`/projects/${slug}`}
                     >
-                        <LinkIcon className=" w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
+                        <FolderCodeIcon className=" w-4 opacity-50 duration-200 group-hover/image:translate-x-[1.5px] group-hover/image:opacity-100" />
                         <span className="text-base">{name}</span>
                     </a>
                     <div className="flex items-center gap-1">
                         {typeIcons[type]}
+                        {/*
+
+                            */}
                         <Link
-                            href={`/projects/${slug}`}
+                            href={url}
+                            target="_blank"
                             className="group flex hover:underline underline-offset-4 items-center text-base"
                         >
-                            <CircleChevronRight className="w-4 opacity-60 duration-200 hover:opacity-100" />
+                            <LinkIcon className="w-4 opacity-60 duration-200 hover:opacity-100" />
                         </Link>
                     </div>
                 </header>
                 <main className="flex-grow space-y-2 overflow-hidden">
                     {showImage && (
-                        <img
-                            className="w-full h-48 object-cover rounded-lg aspect-video"
-                            src={project.images[0]}
-                            alt={`Imagen-${project.name}`}
-                        />
+                        <Link
+                            href={`/projects/${slug}`}
+                            className="group/image"
+                        >
+                            <img
+                                className="w-full h-48 object-cover rounded-lg aspect-video"
+                                src={project.images[0]}
+                                alt={`Imagen-${project.name}`}
+                            />
+                        </Link>
                     )}
                     <p className=" text-left  text-foreground/65">
                         {description}
