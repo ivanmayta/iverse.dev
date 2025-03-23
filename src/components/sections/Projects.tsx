@@ -78,13 +78,13 @@ function Project({
         <>
             <article className=" group/image flex flex-col w-full p-4  space-y-2 hover:bg-zinc-100  dark:hover:bg-zinc-900/20 rounded-xl  ease-in-out duration-0">
                 <header className="flex items-center justify-between">
-                    <a
+                    <Link
                         className=" flex gap-2 text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 decoration-slice underline-offset-[5px] group-hover/image:underline"
                         href={`/projects/${slug}`}
                     >
                         <FolderCodeIcon className=" w-4 opacity-50 duration-200 group-hover/image:translate-x-[1.5px] group-hover/image:opacity-100" />
                         <span className="text-base">{name}</span>
-                    </a>
+                    </Link>
                     <div className="flex items-center gap-1">
                         {typeIcons[type]}
                         {/*
