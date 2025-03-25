@@ -4,6 +4,12 @@ import { Commant } from "@/icons/command"
 import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"
 
+export async function generateStaticParams() {
+    return projects.map((project) => ({
+        slug: project.slug,
+    }))
+}
+
 export default async function IndividualProjects({
     params,
 }: {
