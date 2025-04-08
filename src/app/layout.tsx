@@ -14,7 +14,7 @@ export const metadata = {
         siteName: "iversedev",
         images: [
             {
-                url: "http://localhost/openg.webp", // Must be an absolute URL
+                url: "https://iverse.dev/openg.webp", // Must be an absolute URL
                 width: 800,
                 height: 600,
             },
