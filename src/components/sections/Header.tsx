@@ -9,7 +9,7 @@ export default function Header() {
             <div className="flex">
                 <Link href="/" className=" flex">
                     <img
-                        className="size-14  rounded-full  opacity-90"
+                        className="size-14  rounded-full  opacity-90 dark:brightness-100 brightness-0"
                         src="/logo.webp"
                         alt="Icon of iverse.dev"
                         loading="eager"

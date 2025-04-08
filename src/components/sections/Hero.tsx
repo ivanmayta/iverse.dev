@@ -10,7 +10,7 @@ export default async function Hero() {
     const p4 = paragraphs[3]
 
     return (
-        <section className="mx-auto  w-full max-w-2xl  content-center  pt-12  flex flex-col gap-2 text-lg text-zinc-600 dark:text-zinc-400">
+        <section className="mx-auto  w-full max-w-2xl  content-center  pt-6 sm:pt-12  flex flex-col gap-2 text-lg text-zinc-600 dark:text-zinc-400">
             <h2
                 className={` text-[2rem] font-bold text-zinc-800 dark:text-white pb-4 tracking-wider leading-snug  ${space.className}`}
             >

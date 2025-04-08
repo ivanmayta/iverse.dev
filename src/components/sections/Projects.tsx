@@ -40,7 +40,7 @@ const Projects = () => {
                     </Link>
                 )}
             </div>
-            <div className=" grid grid-cols-1 md:grid-cols-2 -mx-3.5  ">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 -mx-3.5  ">
                 {pathName === "/"
                     ? projects.slice(0, 4).map((project) => {
                           return (
@@ -113,7 +113,7 @@ function Project({
                         >
                             <ViewTransition name={`image`}>
                                 <img
-                                    className="w-full h-48 object-cover rounded-lg aspect-video"
+                                    className="w-full  object-cover rounded-lg aspect-video"
                                     src={project.images[0]}
                                     alt={`Imagen-${project.name}`}
                                 />
