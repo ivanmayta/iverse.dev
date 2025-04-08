@@ -3,7 +3,6 @@ import Link from "next/link"
 import { GitHub } from "@/icons/socials"
 import Navigation from "../ui/navigation"
 import { MiduIcon } from "@/icons/midu"
-import { Circle } from "lucide-react"
 export default function Header() {
     return (
         <header className="max-w-2xl mx-auto pt-6 sm:flex sm:justify-between sm:items-center">

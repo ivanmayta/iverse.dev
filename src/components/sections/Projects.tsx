@@ -109,11 +109,13 @@ function Project({
                             href={`/projects/${slug}`}
                             className="group/image"
                         >
-                            <img
-                                className="w-full h-48 object-cover rounded-lg aspect-video"
-                                src={project.images[0]}
-                                alt={`Imagen-${project.name}`}
-                            />
+                            <ViewTransition name={`image`}>
+                                <img
+                                    className="w-full h-48 object-cover rounded-lg aspect-video"
+                                    src={project.images[0]}
+                                    alt={`Imagen-${project.name}`}
+                                />
+                            </ViewTransition>
                         </Link>
                     )}
                     <ViewTransition name={`${slug}-description`}>
