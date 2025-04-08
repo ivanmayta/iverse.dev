@@ -1,8 +1,7 @@
 
 ## Personal Website ☕🌠
 
-
-![Vista previa de iverse](https://github.com/user-attachments/assets/0e8849e2-76c2-40ef-b574-4007ec0bc2ea)
+![Vista previa de iverse](https://github.com/user-attachments/assets/36ec2a40-197d-4b11-b76c-3b9837a379b8)
 ## Getting Started
 
 First, run the development server:
