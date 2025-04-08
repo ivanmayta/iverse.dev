@@ -62,6 +62,19 @@ export const projects: Projects = [
         icon: "Perú Compras",
     },
     {
+        name: "Up All",
+        slug: "upp-all",
+        type: "videogame",
+        isActive: true,
+        description:
+            "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
+        highlights: [TG.UNITY, TG.CSHARP],
+        url: "https://github.com/ivanmayta",
+        github: "https://github.com/ivanmayta",
+        images: ["/images/up-all-1.webp"],
+        icon: "Perú Compras",
+    },
+    {
         name: "probusiness.pe",
         slug: "probusiness-pe",
         type: "web",
@@ -109,19 +122,6 @@ export const projects: Projects = [
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
         images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
-        icon: "Perú Compras",
-    },
-    {
-        name: "Up All",
-        slug: "upp-all",
-        type: "videogame",
-        isActive: true,
-        description:
-            "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
-        highlights: [TG.UNITY, TG.CSHARP],
-        url: "https://github.com/ivanmayta",
-        github: "https://github.com/ivanmayta",
-        images: ["/images/up-all-1.webp"],
         icon: "Perú Compras",
     },
 ]
