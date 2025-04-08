@@ -3,11 +3,23 @@ import Header from "@/components/sections/Header"
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import Footer from "@/components/sections/Footer"
 import { FlickeringGridBackGround } from "@/components/flickering-grid"
-import { unstable_ViewTransition as ViewTransition } from "react"
 
 export const metadata = {
     title: "iverse.dev",
     description: "Software developer. Focused on nextjs and astro.",
+    openGraph: {
+        title: "iverse.dev",
+        description: "Personal Website - Software Developer",
+        url: "https://iverse.dev",
+        siteName: "iversedev",
+        images: [
+            {
+                url: "http://localhost/openg.webp", // Must be an absolute URL
+                width: 800,
+                height: 600,
+            },
+        ],
+    },
 }
 
 export default async function RootLayout({
