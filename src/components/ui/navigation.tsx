@@ -3,7 +3,7 @@ import { GitHub } from "@/icons/socials"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import path from "path"
+
 const navs = [
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },

@@ -58,7 +58,7 @@ export const projects: Projects = [
         highlights: [TG.ASTRO, TG.TAILWIND],
         url: "https://ssomacal-pe.vercel.app/",
         github: "https://github.com/ivanmayta",
-        images: ["/images/ssomacal-1.png", "/images/ssomacal-2.png"],
+        images: ["/images/ssomacal-1.webp", "/images/ssomacal-2.webp"],
         icon: "Perú Compras",
     },
     {
@@ -71,9 +71,9 @@ export const projects: Projects = [
         url: "https://probusiness-pe.vercel.app/",
         github: "https://github.com/ivanmayta",
         images: [
-            "/images/probusiness-1.png",
-            "/images/probusiness-2.png",
-            "/images/probusiness-3.png",
+            "/images/probusiness-1.webp",
+            "/images/probusiness-2.webp",
+            "/images/probusiness-3.webp",
         ],
         icon: "Perú Compras",
     },
@@ -121,7 +121,7 @@ export const projects: Projects = [
         highlights: [TG.UNITY, TG.CSHARP],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
-        images: ["/images/up-all-1.png"],
+        images: ["/images/up-all-1.webp"],
         icon: "Perú Compras",
     },
 ]

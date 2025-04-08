@@ -2,6 +2,8 @@ import TooltipStatus from "@/components/ui/tooltip-status"
 import Link from "next/link"
 import { GitHub } from "@/icons/socials"
 import Navigation from "../ui/navigation"
+import { MiduIcon } from "@/icons/midu"
+import { Circle } from "lucide-react"
 export default function Header() {
     return (
         <header className="max-w-2xl mx-auto pt-6 sm:flex sm:justify-between sm:items-center">
@@ -36,6 +38,12 @@ export default function Header() {
                                     text="Exploring new tech trends"
                                 />
                                 <TooltipStatus
+                                    icon={
+                                        <MiduIcon className="inline-flex h-4 w-4" />
+                                    }
+                                    text="Midu fan"
+                                />
+                                <TooltipStatus
                                     icon={<AvailabilityStatus />}
                                     text="Available for work"
                                 />
@@ -50,9 +58,8 @@ export default function Header() {
 }
 function AvailabilityStatus() {
     return (
-        <span className="relative inline-flex">
-            <span className="absolute inline-flex  h-3 w-3 animate-ping rounded-full bg-green-500 opacity-75 animate-duration-[1000ms]"></span>
-            <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500"></span>
+        <span className="relative inline-flex pl-1 ">
+            <div className=" bg-green-400 opacity-70 rounded-full h-3 w-3  animate-pulse" />
         </span>
     )
 }

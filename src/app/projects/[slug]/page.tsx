@@ -3,6 +3,7 @@ import { projects } from "@/data/projects"
 import { Commant } from "@/icons/command"
 import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"
+import { unstable_ViewTransition as ViewTransition } from "react"
 
 export async function generateStaticParams() {
     return projects.map((project) => ({
@@ -29,10 +30,16 @@ export default async function IndividualProjects({
                     Projects
                 </Link>
                 <ChevronRightIcon className="text-zinc-800 dark:text-zinc-100  h-3 w-3 self-center inline-block" />
-                <h3 className="text-white font-bold text-xl">{project.name}</h3>
+                <ViewTransition name={`${slug}-title`}>
+                    <h3 className="text-white font-bold text-xl">
+                        {project.name}
+                    </h3>
+                </ViewTransition>
             </div>
             <div className="text-start  space-y-6">
-                <h2>{project.description}</h2>
+                <ViewTransition name={`${slug}-description`}>
+                    <h2>{project.description}</h2>
+                </ViewTransition>
             </div>
             <div className="flex gap-2 pb-6">
                 <ul className="flex flex-col gap-2 ">
@@ -46,23 +53,25 @@ export default async function IndividualProjects({
                         <span className="bg-green-500/30 text-green-500 px-2 rounded-sm">
                             STACK
                         </span>
-                        <div className=" flex flex-wrap gap-x-4 gap-2 items-start justify-start ">
-                            {highlights &&
-                                highlights.map((highlight) => {
-                                    const { name, icon: Icon } = highlight
-                                    return (
-                                        <div
-                                            key={name}
-                                            className="flex  items-center justify-center"
-                                        >
-                                            <Icon className="mr-1 text-zinc-800 dark:text-zinc-100  h-4 w-4" />
-                                            <span className="text-zinc-800 dark:text-zinc-100  text-sm">
-                                                {name}
-                                            </span>
-                                        </div>
-                                    )
-                                })}
-                        </div>
+                        <ViewTransition name={`${slug}-highlight`}>
+                            <div className=" flex flex-wrap gap-x-4 gap-2 items-start justify-start ">
+                                {highlights &&
+                                    highlights.map((highlight) => {
+                                        const { name, icon: Icon } = highlight
+                                        return (
+                                            <div
+                                                key={name}
+                                                className="flex  items-center justify-center"
+                                            >
+                                                <Icon className="mr-1 text-zinc-800 dark:text-zinc-100  h-4 w-4" />
+                                                <span className="text-zinc-800 dark:text-zinc-100  text-sm">
+                                                    {name}
+                                                </span>
+                                            </div>
+                                        )
+                                    })}
+                            </div>
+                        </ViewTransition>
                     </li>
                     <li className="flex gap-2 items-center">
                         <span className="bg-green-500/30 text-green-500 px-2 rounded-sm">
@@ -78,10 +87,12 @@ export default async function IndividualProjects({
                     </li>
                 </ul>
             </div>
-            <Marquee3D images={project.images} />
+            <ViewTransition name={`image`}>
+                <Marquee3D images={project.images} />
+            </ViewTransition>
 
             <Link
-                className="group text-teal-300 flex items-center pb-6 font-semibold underline underline-offset-2"
+                className="group text-green-400 flex items-center pb-6 font-semibold underline underline-offset-2"
                 href="/projects"
             >
                 <Commant className=" stroke-current group-hover:scale-110 transition-transform" />

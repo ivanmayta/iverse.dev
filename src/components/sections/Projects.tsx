@@ -11,23 +11,25 @@ import {
     Smartphone,
 } from "lucide-react"
 import { projects } from "@/data/projects"
-import React from "react"
 import { Project as TypeProject } from "@/types/projects.type"
 import Link from "next/link"
 import { space } from "@/fonts/fonts"
 import BadgeTools from "../ui/badge-tools"
 import { usePathname } from "next/navigation"
+import { unstable_ViewTransition as ViewTransition } from "react"
 
 const Projects = () => {
     const pathName = usePathname()
     return (
         <section className="group/sub mx-auto max-w-2xl w-full ">
             <div className="flex items-center justify-between pb-2">
-                <h2
-                    className={`flex group-hover/sub:text-[#9d4cfa] flex-row items-center pb-2 text-xl lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
-                >
-                    / Projects
-                </h2>
+                <ViewTransition name="project-title">
+                    <h2
+                        className={`flex group-hover/sub:text-[#9d4cfa] flex-row items-center pb-2 text-xl lg:leading-tight tracking-wide font-medium text-black dark:text-zinc-500  ${space.className}`}
+                    >
+                        / Projects
+                    </h2>
+                </ViewTransition>
                 {pathName === "/" && (
                     <Link
                         href={"/projects"}
@@ -83,7 +85,9 @@ function Project({
                         href={`/projects/${slug}`}
                     >
                         <FolderCodeIcon className=" w-4 opacity-50 duration-200 group-hover/image:translate-x-[1.5px] group-hover/image:opacity-100" />
-                        <span className="text-base">{name}</span>
+                        <ViewTransition name={`${slug}-title`}>
+                            <span className="text-base">{name}</span>
+                        </ViewTransition>
                     </Link>
                     <div className="flex items-center gap-1">
                         {typeIcons[type]}
@@ -112,22 +116,26 @@ function Project({
                             />
                         </Link>
                     )}
-                    <p className=" text-left  text-foreground/65">
-                        {description}
-                    </p>
-                    <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start">
-                        {highlights &&
-                            highlights.map((highlight) => {
-                                const { name, icon: Icon } = highlight
-                                return (
-                                    <BadgeTools
-                                        key={name}
-                                        icon={<Icon className="w-4" />}
-                                        text={name}
-                                    />
-                                )
-                            })}
-                    </div>
+                    <ViewTransition name={`${slug}-description`}>
+                        <p className=" text-left  text-foreground/65">
+                            {description}
+                        </p>
+                    </ViewTransition>
+                    <ViewTransition name={`${slug}-highlight`}>
+                        <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start">
+                            {highlights &&
+                                highlights.map((highlight) => {
+                                    const { name, icon: Icon } = highlight
+                                    return (
+                                        <BadgeTools
+                                            key={name}
+                                            icon={<Icon className="w-4" />}
+                                            text={name}
+                                        />
+                                    )
+                                })}
+                        </div>
+                    </ViewTransition>
                 </main>
             </article>
         </>
