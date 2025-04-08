@@ -26,6 +26,7 @@ export default async function IndividualProjects({
                 <Link
                     href="/projects"
                     className="font-semibold hover:underline"
+                    scroll={false}
                 >
                     Projects
                 </Link>
@@ -94,6 +95,7 @@ export default async function IndividualProjects({
             <Link
                 className="group text-green-400 flex items-center pb-6 font-semibold underline underline-offset-2"
                 href="/projects"
+                scroll={false}
             >
                 <Commant className=" stroke-current group-hover:scale-110 transition-transform" />
                 cd . .

@@ -24,7 +24,10 @@ export default function Contributions() {
                                     <Jsconf />
                                     jsconf.es
                                 </a>
-                                <a href="https://github.com/midudev/jsconf.es">
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/midudev/jsconf.es"
+                                >
                                     <GitHub className="w-4" />
                                 </a>
                             </header>
