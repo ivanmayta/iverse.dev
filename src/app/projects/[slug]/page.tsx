@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects"
-import { ChevronRightIcon, Command } from "lucide-react"
+import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"
 
 export async function generateStaticParams() {
