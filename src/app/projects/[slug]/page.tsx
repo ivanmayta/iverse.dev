@@ -80,14 +80,13 @@ export default async function ProjectPage({
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className="flex flex-col gap-6">
                 {project.images.map((image, index) => (
                     <img
+                        className="aspect-video object-cover rounded-xl"
                         key={index}
                         src={image}
                         alt={project.name}
-                        width={100}
-                        height={100}
                     />
                 ))}
             </div>

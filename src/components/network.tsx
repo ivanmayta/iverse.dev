@@ -56,7 +56,7 @@ export function Network() {
                     <span>/ Connect</span>
                 </h2>
             </div>
-            <ul className="flex items-center gap-5 justify-center">
+            <ul className="flex items-center gap-5 justify-center flex-wrap">
                 {networks.map((network, index) => (
                     <li
                         key={index}

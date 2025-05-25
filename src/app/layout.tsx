@@ -15,7 +15,7 @@ export default async function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="antialiased flex flex-col max-w-2xl mx-auto  min-h-screen">
+            <body className="antialiased flex flex-col max-w-2xl mx-auto  min-h-screen px-4 sm:px-0">
                 <Header />
                 <main className="flex flex-col flex-1 ">{children}</main>
                 <Footer />
