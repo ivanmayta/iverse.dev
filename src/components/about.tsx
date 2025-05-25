@@ -1,6 +1,6 @@
 export function About() {
     return (
-        <section id="about" className="text-zinc-300 text-base text-pretty ">
+        <section id="about" className=" text-zinc-300 text-base text-pretty ">
             <p className="pb-[0.5lh]">
                 Software Developer, experienced in web, mobile, desktop,
                 databases, algorithms and data structures, artificial

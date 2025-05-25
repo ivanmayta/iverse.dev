@@ -17,8 +17,13 @@ export default async function RootLayout({
         <html lang="en">
             <body className="antialiased flex flex-col max-w-2xl mx-auto  min-h-screen">
                 <Header />
-                <main className="flex flex-col flex-1">{children}</main>
+                <main className="flex flex-col flex-1 ">{children}</main>
                 <Footer />
+                <img
+                    src="/logo.svg"
+                    alt="iverse.dev"
+                    className="absolute top-0 left-0 w-screen h-screen opacity-25 -z-50 brightness-10"
+                />
             </body>
         </html>
     )

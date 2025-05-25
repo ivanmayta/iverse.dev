@@ -13,31 +13,42 @@ export function Header() {
             active: pathname === "/",
         },
         {
-            label: "About",
-            href: "#about",
-            active: pathname === "/about",
-        },
-        {
             label: "Projects",
             href: "/projects",
             active: pathname === "/projects",
         },
+        {
+            label: "Posts",
+            href: "/posts",
+            active: pathname === "/posts",
+        },
     ]
     return (
-        <header className="flex items-center justify-between py-12">
-            <h1 className="flex items-center">
-                <Link href="/" className={mplus1code.className}>
+        <header
+            className={`${mplus1code.className} flex items-center justify-between py-12`}
+        >
+            <h1 className="  flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
+                    <img
+                        src="/logo.svg"
+                        alt="iverse.dev"
+                        className="w-10 h-10 bg-white rounded-lg"
+                    />
                     <span className="text-xl font-medium">iverse.dev</span>
-                    <span className="text-zinc-400"> ~ ivan</span>
+                    <span className="text-zinc-400 hover:text-[#9d4cfa]">
+                        {" "}
+                        ~ ivan
+                    </span>
                 </Link>
             </h1>
+
             <nav className="flex items-center gap-4">
                 {navItems.map((item) => (
                     <Link
                         key={item.href}
                         href={item.href}
                         className={cn(
-                            "text-sm font-medium hover:underline ",
+                            "text-sm  hover:underline ",
                             item.active && "text-purple-600"
                         )}
                     >

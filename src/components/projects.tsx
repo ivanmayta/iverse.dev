@@ -5,12 +5,12 @@ import Link from "next/link"
 
 export function Projects() {
     return (
-        <section id="projects" className="flex flex-col py-4 gap-4">
+        <section id="projects" className="group/projects flex flex-col py-4 gap-4">
             <div
                 className={`${mplus1code.className} flex items-center justify-between`}
             >
-                <h2 className={` text-zinc-400`}>
-                    <span className="text-zinc-400">/ Projects</span>
+                <h2 className={` group-hover/projects:text-[#9d4cfa] text-zinc-400`}>
+                    <span>/ Projects</span>
                 </h2>
                 <Link
                     href="/projects"

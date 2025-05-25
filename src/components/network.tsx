@@ -9,7 +9,7 @@ export function Network() {
             name: "mayta.me",
             url: "https://mayta.me",
             icon: <Cv />,
-            color: " hover:text-red-400",
+            color: " hover:text-fuchsia-500",
         },
 
         {
@@ -45,10 +45,15 @@ export function Network() {
     ]
 
     return (
-        <section id="projects" className="flex flex-col py-4 gap-4">
+        <section
+            id="projects"
+            className="group/network  flex flex-col py-4 gap-4"
+        >
             <div className={`${mplus1code.className} flex items-center`}>
-                <h2 className={` text-zinc-400`}>
-                    <span className="text-zinc-400">/ Connect</span>
+                <h2
+                    className={` group-hover/network:text-[#9d4cfa] text-zinc-400`}
+                >
+                    <span>/ Connect</span>
                 </h2>
             </div>
             <ul className="flex items-center gap-5 justify-center">

@@ -1,3 +1,5 @@
+import { LucideIcon } from "lucide-react"
+
 export type Project = {
     name: string
     slug: string
@@ -9,4 +11,10 @@ export type Project = {
     github: string
     images: string[]
     icon: string
+    highlights: Highlight[]
+}
+
+type Highlight = {
+    name: string
+    icon: LucideIcon | React.ComponentType<React.SVGProps<SVGSVGElement>>
 }

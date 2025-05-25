@@ -1,4 +1,5 @@
 import type { Project } from "@/types/types"
+import { TAGS as TG } from "@/data/tags-project"
 
 export const projects: Project[] = [
     {
@@ -17,6 +18,15 @@ export const projects: Project[] = [
             "/images/izimport-3.webp",
         ],
         icon: "Izimport",
+        highlights: [
+            TG.NEXTJS,
+            TG.SUPABASE,
+            TG.REACT,
+            TG.TAILWIND,
+            TG.DHL,
+            TG.EXCHANGERATES,
+            TG.SHADCN,
+        ],
     },
 
     {
@@ -31,6 +41,7 @@ export const projects: Project[] = [
         github: "https://github.com/ivanmayta",
         images: ["/images/100.webp", "/images/portada.webp"],
         icon: "Import Facil",
+        highlights: [TG.ANDROID, TG.KOTLIN, TG.DHL, TG.EXCHANGERATES],
     },
     {
         name: "ssomacal.com",
@@ -43,6 +54,7 @@ export const projects: Project[] = [
         github: "https://github.com/ivanmayta",
         images: ["/images/ssomacal-1.webp", "/images/ssomacal-2.webp"],
         icon: "Perú Compras",
+        highlights: [TG.ASTRO, TG.TAILWIND],
     },
     {
         name: "Up All",
@@ -56,6 +68,7 @@ export const projects: Project[] = [
         github: "https://github.com/ivanmayta",
         images: ["/images/up-all-1.webp"],
         icon: "Perú Compras",
+        highlights: [TG.UNITY, TG.CSHARP],
     },
     {
         name: "probusiness.pe",
@@ -72,6 +85,7 @@ export const projects: Project[] = [
             "/images/probusiness-3.webp",
         ],
         icon: "Perú Compras",
+        highlights: [TG.ASTRO, TG.TAILWIND],
     },
     {
         name: "iSummarize",
@@ -93,6 +107,14 @@ export const projects: Project[] = [
         github: "https://github.com/ivanmayta/iSummarize-strapi",
         images: ["/images/isummarize.webp", "/images/isummarize2.webp"],
         icon: "iSummerize",
+        highlights: [
+            TG.NEXTJS,
+            TG.REACT,
+            TG.STRAPI,
+            TG.GEMINI,
+            TG.DIGITALOCEAN,
+            TG.POSTGRESQL,
+        ],
     },
     {
         name: "Perú Compras",
@@ -106,5 +128,6 @@ export const projects: Project[] = [
         github: "https://github.com/ivanmayta",
         images: ["/images/dashboard.webp", "/images/dashboard2.webp "],
         icon: "Perú Compras",
+        highlights: [TG.POWERBI, TG.ETL],
     },
 ]
