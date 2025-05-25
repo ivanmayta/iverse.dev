@@ -1,16 +1,19 @@
+"use client"
 import { Project } from "@/types/types"
 import { MagicCard } from "./ui/magic-card"
 import { ArrowRight } from "lucide-react"
 import { FolderCodeIcon } from "lucide-react"
 import Link from "next/link"
 import { GlareCard } from "./ui/glare-card"
-
+import { usePathname } from "next/navigation"
 export function ProjectCard({ project }: { project: Project }) {
-    const { slug, name, description } = project
+    const pathname = usePathname()
+    const showImage = pathname === "/projects"
+    const { slug, name, description, stack } = project
     return (
         <div className="h-full w-full group/image">
             <Link
-                className=" flex h-full w-full gap-2 text-base  tracking-tight  "
+                className=" flex h-full w-full gap-2 text-base  tracking-tight "
                 scroll={false}
                 href={`/projects/${slug}`}
             >
@@ -38,12 +41,45 @@ export function ProjectCard({ project }: { project: Project }) {
                                 </div>
                             </header>
                             <main className="flex-grow space-y-2 overflow-hidden">
+                                {showImage && (
+                                    <img
+                                        src={project.images[0]}
+                                        alt={name}
+                                        className="w-full h-auto aspect-video object-cover"
+                                    />
+                                )}
                                 <p className=" text-left text-sm  text-foreground/65">
                                     {description}
                                 </p>
-
-                                <div className=" flex flex-wrap gap-x-4 gap-1 items-start justify-start"></div>
                             </main>
+                            <footer>
+                                <div className="mt-auto flex flex-wrap items-start justify-start">
+                                    {stack?.map((tech, index) => {
+                                        const isString =
+                                            typeof tech === "string"
+                                        if (isString) {
+                                            return (
+                                                <span
+                                                    className="text-sm  rounded-sm"
+                                                    key={index}
+                                                >
+                                                    {tech}
+                                                </span>
+                                            )
+                                        }
+                                        const { icon: Icon } = tech
+
+                                        return (
+                                            <span
+                                                key={index}
+                                                className="flex items-center gap-1 text-sm  px-2 rounded-sm"
+                                            >
+                                                <Icon className="w-4 h-4" />
+                                            </span>
+                                        )
+                                    })}
+                                </div>
+                            </footer>
                         </article>
                     </div>
                 </GlareCard>

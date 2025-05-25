@@ -9,7 +9,7 @@ export const projects: Project[] = [
         isActive: true,
         description:
             "📦 E-commerce product catalog platform for B2B and B2C businesses.",
-        stack: ["Next.js", "Supabase", "React", "Tailwind"],
+        stack: [TG.NEXTJS, TG.SUPABASE, TG.REACT, TG.TAILWIND],
         url: "https://izimport.com",
         github: "https://github.com/izimport.com",
         images: [
@@ -18,15 +18,7 @@ export const projects: Project[] = [
             "/images/izimport-3.webp",
         ],
         icon: "Izimport",
-        highlights: [
-            TG.NEXTJS,
-            TG.SUPABASE,
-            TG.REACT,
-            TG.TAILWIND,
-            TG.DHL,
-            TG.EXCHANGERATES,
-            TG.SHADCN,
-        ],
+        highlights: [TG.DHL, TG.EXCHANGERATES, TG.SHADCN],
     },
 
     {
@@ -36,7 +28,7 @@ export const projects: Project[] = [
         isActive: true,
         description:
             "✈️Tracking international shipments by DHL and import quotes",
-        stack: ["Android Studio", "Kotlin"],
+        stack: [TG.ANDROID, TG.KOTLIN],
         url: "https://play.google.com/store/apps/details?id=com.importa.facil",
         github: "https://github.com/ivanmayta",
         images: ["/images/100.webp", "/images/portada.webp"],
@@ -48,8 +40,9 @@ export const projects: Project[] = [
         slug: "ssomacal-pe",
         type: "web",
         isActive: true,
-        description: "🦺 Landing page",
-        stack: ["Astro", "Tailwind"],
+        description:
+            "🦺 Landing page for the safety, occupational health, environment and quality company",
+        stack: [TG.ASTRO, TG.TAILWIND],
         url: "https://ssomacal-pe.vercel.app/",
         github: "https://github.com/ivanmayta",
         images: ["/images/ssomacal-1.webp", "/images/ssomacal-2.webp"],
@@ -63,7 +56,7 @@ export const projects: Project[] = [
         isActive: true,
         description:
             "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
-        stack: ["Unity", "C#"],
+        stack: [TG.UNITY, TG.CSHARP],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
         images: ["/images/up-all-1.webp"],
@@ -76,7 +69,7 @@ export const projects: Project[] = [
         type: "web",
         isActive: true,
         description: " 🚢 Landing page of the importing company Probusiness",
-        stack: ["Astro", "Tailwind"],
+        stack: [TG.ASTRO, TG.TAILWIND],
         url: "https://probusiness-pe.vercel.app/",
         github: "https://github.com/ivanmayta",
         images: [
@@ -96,12 +89,12 @@ export const projects: Project[] = [
         description:
             "🎬Summary generator for YouTube videos with artificial intelligence",
         stack: [
-            "Next.js",
-            "React",
-            "Strapi",
-            "Gemini",
-            "DigitalOcean",
-            "PostgreSQL",
+            TG.NEXTJS,
+            TG.REACT,
+            TG.STRAPI,
+            TG.GEMINI,
+            TG.DIGITALOCEAN,
+            TG.POSTGRESQL,
         ],
         url: "https://isummarize.vercel.app/",
         github: "https://github.com/ivanmayta/iSummarize-strapi",
@@ -123,7 +116,7 @@ export const projects: Project[] = [
         isActive: true,
         description:
             "📶Data warehouse for the management and use of public resources.",
-        stack: ["Business Intelligence", "PowerBI", "ETL", "Python"],
+        stack: [TG.POWERBI, TG.ETL],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
         images: ["/images/dashboard.webp", "/images/dashboard2.webp "],

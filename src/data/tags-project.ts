@@ -5,7 +5,7 @@ import {
     ShadCn,
     Nextjs,
     PowerBi,
-    AndroidEstudio,
+    AndroidStudio,
     Strapi,
     IconGemini,
     DigitalOcean,
@@ -46,7 +46,7 @@ export const TAGS = {
     },
     ANDROID: {
         name: "Android Studio",
-        icon: AndroidEstudio,
+        icon: AndroidStudio,
     },
     POWERBI: {
         name: "Power BI",

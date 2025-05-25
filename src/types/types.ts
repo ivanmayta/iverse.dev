@@ -6,7 +6,7 @@ export type Project = {
     type: "web" | "mobile" | "bi" | "videogame"
     isActive: boolean
     description: string
-    stack: string[]
+    stack: Highlight[] | string[]
     url: string
     github: string
     images: string[]

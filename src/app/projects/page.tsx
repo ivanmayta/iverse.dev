@@ -1,3 +1,9 @@
-export default function Projects() {
-    return <div>Projects</div>
+import { Projects } from "@/components/projects"
+
+export default function ProjectsPage() {
+    return (
+        <main className="flex flex-col gap-4">
+            <Projects />
+        </main>
+    )
 }
