@@ -83,7 +83,7 @@ export default async function ProjectPage({
             </div>
             <div className="flex flex-col gap-6">
                 <ImagesSlider
-                    className="w-full h-auto aspect-video"
+                    className="w-full h-auto aspect-video rounded-md"
                     images={project?.images}
                 >
                     <div></div>
