@@ -16,7 +16,7 @@ export function Footer() {
                 </a>
             </div>
 
-            <span>2024</span>
+            <span>2025</span>
         </footer>
     )
 }
