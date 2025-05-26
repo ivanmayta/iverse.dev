@@ -2,9 +2,9 @@ export function About() {
     return (
         <section id="about" className=" text-zinc-300 text-base text-pretty ">
             <p className="pb-[0.5lh]">
-                Software Developer, experienced in web, mobile, desktop,
-                databases, algorithms and data structures, artificial
-                intelligence, and business intelligence projects.
+                Software Developer experienced in web, mobile, desktop systems,
+                database design, AI and BI solutions, agile development with
+                Scrum. Strong foundation in algorithms, data structures
             </p>
             <p className="pb-[0.5lh]">
                 I successfully completed the{" "}
@@ -16,7 +16,12 @@ export function About() {
                 >
                     International Baccalaureate Diploma Program
                 </a>
-                .
+                -technology and english skills.
+            </p>
+            <p className="pb-[0.5lh]">
+                {`Specializing in full-stack ecosystems: TypeScript (Astro/SSG +
+                React/Next.js/SSR/ISR), Node.js (Express), Python (FastAPI) –
+                crafting performant web experiences.`}
             </p>
             <p className="pb-[0.5lh]">
                 Frontend Developer with React by{" "}

@@ -14,6 +14,7 @@ export function Technologies() {
             { badge: "Node.js", logo: "node.js", logoColor: "" },
             { badge: "Express", logo: "express", logoColor: "" },
             { badge: "Python", logo: "python", logoColor: "" },
+            { badge: "FastAPI", logo: "fastapi", logoColor: "" },
             { badge: "Django", logo: "django", logoColor: "" },
             { badge: "Kotlin", logo: "kotlin", logoColor: "7F52FF" },
         ],
@@ -21,6 +22,7 @@ export function Technologies() {
             { badge: "PostgreSQL", logo: "postgresql", logoColor: "" },
             { badge: "MySQL", logo: "mysql", logoColor: "" },
             { badge: "Firebase", logo: "firebase", logoColor: "FFCA28" },
+            { badge: "Prisma", logo: "prisma", logoColor: "" },
         ],
         cloud: [{ badge: "DigitalOcean", logo: "digitalocean", logoColor: "" }],
         tools: [
