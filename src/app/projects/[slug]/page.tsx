@@ -1,3 +1,4 @@
+import { ImagesSlider } from "@/components/ui/images-slider"
 import { projects } from "@/data/projects"
 import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"
@@ -81,14 +82,12 @@ export default async function ProjectPage({
                 </ul>
             </div>
             <div className="flex flex-col gap-6">
-                {project.images.map((image, index) => (
-                    <img
-                        className="aspect-video object-cover rounded-xl"
-                        key={index}
-                        src={image}
-                        alt={project.name}
-                    />
-                ))}
+                <ImagesSlider
+                    className="w-full h-auto aspect-video"
+                    images={project?.images}
+                >
+                    <div></div>
+                </ImagesSlider>
             </div>
             {/**
                  * @todo: add marquee3d

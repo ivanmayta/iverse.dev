@@ -45,7 +45,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                     <img
                                         src={project.images[0]}
                                         alt={name}
-                                        className="w-full h-auto aspect-video object-cover"
+                                        className="w-full h-auto aspect-video object-cover "
                                     />
                                 )}
                                 <p className=" text-left text-sm  text-foreground/65">

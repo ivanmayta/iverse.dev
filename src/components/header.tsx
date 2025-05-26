@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 
 export function Header() {
     const pathname = usePathname()
+    const isInProjectsPage = pathname.includes("/projects")
     const navItems = [
         {
             label: "Home",
@@ -15,7 +16,7 @@ export function Header() {
         {
             label: "Projects",
             href: "/projects",
-            active: pathname === "/projects",
+            active: isInProjectsPage,
         },
         {
             label: "Posts",

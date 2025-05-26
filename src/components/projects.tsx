@@ -12,32 +12,34 @@ export function Projects() {
         ? projects
         : projects.slice(0, 4)
     return (
-        <section
-            id="projects"
-            className="group/projects flex flex-col py-4 gap-4"
-        >
-            <div
-                className={`${mplus1code.className} flex items-center justify-between`}
+        <>
+            <section
+                id="projects"
+                className="group/projects flex flex-col py-4 gap-4"
             >
-                <h2
-                    className={` group-hover/projects:text-[#9d4cfa] text-zinc-400`}
+                <div
+                    className={`${mplus1code.className} flex items-center justify-between`}
                 >
-                    <span>/ Projects</span>
-                </h2>
-                {!isInProjectsPage && (
-                    <Link
-                        href="/projects"
-                        className="text-xs text-zinc-400 hover:text-white"
+                    <h2
+                        className={` group-hover/projects:text-[#9d4cfa] text-zinc-400`}
                     >
-                        view all →
-                    </Link>
-                )}
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ">
-                {projectsToShow.map((project) => (
-                    <ProjectCard key={project.slug} project={project} />
-                ))}
-            </div>
-        </section>
+                        <span>/ Projects</span>
+                    </h2>
+                    {!isInProjectsPage && (
+                        <Link
+                            href="/projects"
+                            className="text-xs text-zinc-400 hover:text-white"
+                        >
+                            view all →
+                        </Link>
+                    )}
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 ">
+                    {projectsToShow.map((project) => (
+                        <ProjectCard key={project.slug} project={project} />
+                    ))}
+                </div>
+            </section>
+        </>
     )
 }
