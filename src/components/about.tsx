@@ -4,7 +4,7 @@ export function About() {
             <p className="pb-[0.5lh]">
                 Software Developer experienced in web, mobile, desktop systems,
                 database design, AI and BI solutions, agile development with
-                Scrum. Strong foundation in algorithms, data structures
+                Scrum. Strong foundation in algorithms and data structures
             </p>
             <p className="pb-[0.5lh]">
                 I successfully completed the{" "}
@@ -19,7 +19,7 @@ export function About() {
                 -technology and english skills.
             </p>
             <p className="pb-[0.5lh]">
-                {`Specializing in full-stack ecosystems: TypeScript (Astro/SSG +
+                {`Focused in full-stack ecosystems: TypeScript (Astro/SSG +
                 React/Next.js/SSR/ISR), Node.js (Express), Python (FastAPI) –
                 crafting performant web experiences.`}
             </p>

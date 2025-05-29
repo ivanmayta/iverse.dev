@@ -26,7 +26,7 @@ export function Header() {
     ]
     return (
         <header
-            className={`${mplus1code.className} flex items-center justify-between py-12`}
+            className={`${mplus1code.className} flex items-center gap-4 sm:gap-0 flex-col sm:flex-row sm:justify-between py-12`}
         >
             <h1 className="  flex items-center gap-2">
                 <Link href="/" className="flex items-center gap-2">

@@ -7,7 +7,7 @@ export function Footer() {
             <div className="group">
                 <a
                     className="flex  items-center  underline-offset-[5px] hover:underline decoration-dotted gap-2 "
-                    href="https://github.com/ivanmayta"
+                    href="https://github.com/iversedev"
                     target="_blank"
                 >
                     <Heart className="w-4 text-red-500 group-hover:transform group-hover:animate-pulse" />
