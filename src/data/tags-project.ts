@@ -14,6 +14,8 @@ import {
     Unity,
     Csharp,
     Astro,
+    Redux,
+    Vite,
 } from "@/icons/stacks"
 
 import { DownloadCloud, Building2, HandCoins, ChartBarBig } from "lucide-react"
@@ -99,5 +101,13 @@ export const TAGS = {
     ASTRO: {
         name: "Astro",
         icon: Astro,
+    },
+    REDUX: {
+        name: "Redux",
+        icon: Redux,
+    },
+    VITE: {
+        name: "Vite",
+        icon: Vite,
     },
 }
