@@ -48,19 +48,25 @@ export function Technologies() {
         </section>
     )
 }
-export const RowTechs = ({
+export const RowTechs = async ({
     techs,
 }: {
     techs: { badge: string; logo: string; logoColor: string }[]
 }) => {
+    const technologies = await Promise.all(
+        techs.map(async (tech) => {
+            const response = await fetch(
+                `https://img.shields.io/badge/-${tech.badge}-000?&logo=${tech.logo}&logoColor=${tech.logoColor}&style=flat-square`,
+                { cache: "force-cache" }
+            )
+            const data = await response.text()
+            return data
+        })
+    )
     return (
         <div className="flex justify-center gap-2 py-1">
-            {techs.map((tech, index) => (
-                <img
-                    key={index}
-                    src={`https://img.shields.io/badge/-${tech.badge}-000?&logo=${tech.logo}&logoColor=${tech.logoColor}`}
-                    alt={tech.badge}
-                />
+            {technologies.map((tech, index) => (
+                <div key={index} dangerouslySetInnerHTML={{ __html: tech }} />
             ))}
         </div>
     )
