@@ -9,7 +9,7 @@ export const projects: Project[] = [
         isActive: true,
         description:
             "📦 E-commerce product catalog platform for B2B and B2C businesses.",
-        stack: [TG.NEXTJS, TG.SUPABASE, TG.REACT, TG.TAILWIND],
+        stack: [TG.NEXTJS, TG.SUPABASE, TG.REACT, TG.TAILWIND, TG.CLERK],
         url: "https://izimport.com",
         github: "https://github.com/izimport.com",
         images: [

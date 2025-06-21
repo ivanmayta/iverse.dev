@@ -16,12 +16,17 @@ import {
     Astro,
     Redux,
     Vite,
+    Clerk,
 } from "@/icons/stacks"
 
 import { DownloadCloud, Building2, HandCoins, ChartBarBig } from "lucide-react"
 import { Dhl } from "@/icons/dhl"
 
 export const TAGS = {
+    CLERK: {
+        name: "Clerk",
+        icon: Clerk,
+    },
     REACT: {
         name: "React",
         icon: Reactjs,
