@@ -121,12 +121,8 @@ export const GlareCard = ({
             }}
         >
             <div className="h-full grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))]  hover:[--opacity:0.15] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden">
-                <div className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))]">
-                    <div
-                        className={cn("h-full w-full dark:bg-[#0a0a0a]", className)}
-                    >
-                        {children}
-                    </div>
+                <div className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))] dark:bg-[#0a0a0a]">
+                    {children}
                 </div>
                 <div className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_1px_0_round_var(--radius))] opacity-[var(--opacity)] transition-opacity transition-background duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-background [background:radial-gradient(farthest-corner_circle_at_var(--m-x)_var(--m-y),_rgba(255,255,255,0.8)_10%,_rgba(255,255,255,0.65)_20%,_rgba(255,255,255,0)_90%)]" />
                 <div

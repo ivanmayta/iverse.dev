@@ -64,7 +64,7 @@ export const RowTechs = async ({
         })
     )
     return (
-        <div className="flex justify-center gap-2 py-1">
+        <div className="flex flex-wrap justify-center gap-2 py-1">
             {technologies.map((tech, index) => (
                 <div key={index} dangerouslySetInnerHTML={{ __html: tech }} />
             ))}
