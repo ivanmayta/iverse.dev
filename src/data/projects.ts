@@ -40,7 +40,7 @@ export const projects: Project[] = [
         type: "videogame",
         isActive: true,
         description:
-            "🎮Videogame inspired by Only Up, where you jump and overcome obstacles.",
+            "🎮 Videogame inspired by Only Up, where you jump and overcome obstacles.",
         stack: [TG.UNITY, TG.CSHARP],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
         type: "mobile",
         isActive: true,
         description:
-            "✈️Tracking international shipments by DHL and import quotes",
+            "✈️ Tracking international shipments by DHL and import quotes",
         stack: [TG.ANDROID, TG.KOTLIN],
         url: "https://play.google.com/store/apps/details?id=com.importa.facil",
         github: "https://github.com/ivanmayta",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
         slug: "quotes-izimport-com",
         type: "web",
         isActive: true,
-        description: "💰Import quotes based on Peru's tariffs",
+        description: "💰 Import quotes based on Peru's tariffs",
         stack: [TG.VITE, TG.REACT, TG.REDUX, TG.TAILWIND],
         url: "https://quotes.izimport.com",
         github: "https://github.com/ivanmayta/quotes.izimport.com",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
         isActive: true,
 
         description:
-            "🎬Summary generator for YouTube videos with artificial intelligence",
+            "🎬 Summary generator for YouTube videos with artificial intelligence",
         stack: [
             TG.NEXTJS,
             TG.REACT,
@@ -141,7 +141,7 @@ export const projects: Project[] = [
         type: "bi",
         isActive: true,
         description:
-            "📶Data warehouse for the management and use of public resources.",
+            "📶 Data warehouse for the management and use of public resources.",
         stack: [TG.POWERBI, TG.ETL],
         url: "https://github.com/ivanmayta",
         github: "https://github.com/ivanmayta",

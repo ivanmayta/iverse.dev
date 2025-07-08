@@ -40,7 +40,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                     <ArrowRight className="w-4 opacity-60 duration-200 group-hover/image:opacity-100" />
                                 </div>
                             </header>
-                            <main className="flex-grow space-y-2 overflow-hidden">
+                            <section className="flex-grow space-y-2 overflow-hidden">
                                 {showImage && (
                                     <img
                                         src={project.images[0]}
@@ -51,7 +51,7 @@ export function ProjectCard({ project }: { project: Project }) {
                                 <p className=" text-left text-sm  text-foreground/65">
                                     {description}
                                 </p>
-                            </main>
+                            </section>
                             <footer>
                                 <div className="mt-auto flex flex-wrap items-start justify-start">
                                     {stack?.map((tech, index) => {

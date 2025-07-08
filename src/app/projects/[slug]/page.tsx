@@ -22,7 +22,7 @@ export default async function ProjectPage({
     const { highlights } = project
 
     return (
-        <main className="flex flex-col pt-12 w-full max-w-2xl mx-auto gap-2  ">
+        <section className="flex flex-col pt-12 w-full max-w-2xl mx-auto gap-2  ">
             <div className="flex text-amber-600  font-semibold items-center gap-1">
                 <Link
                     href="/projects"
@@ -105,6 +105,6 @@ export default async function ProjectPage({
                 />
                 cd . .
             </Link>
-        </main>
+        </section>
     )
 }

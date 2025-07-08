@@ -1,7 +1,7 @@
 export default function Posts() {
     return (
-        <main>
+        <section>
             <h1>In progress...</h1>
-        </main>
+        </section>
     )
 }

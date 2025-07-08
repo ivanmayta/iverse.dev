@@ -22,22 +22,23 @@ export default function Contributions() {
                                 >
                                     <CornerDownRight className="w-4 opacity-50 duration-200 group-hover:translate-x-[1.5px] group-hover:opacity-100" />
                                     <Jsconf />
-                                    jsconf.es
+                                    <h3>jsconf.es</h3>
                                 </a>
                                 <a
                                     className="hover:text-white text-zinc-400"
                                     target="_blank"
                                     href="https://github.com/midudev/jsconf.es"
+                                    aria-label="github repository"
                                 >
                                     <Github />
                                 </a>
                             </header>
-                            <main>
-                                <p className="font-medium">
-                                    🎊 Web development event with javascript.
-                                    organized by Midudev.
-                                </p>
-                            </main>
+
+                            <p className="font-medium">
+                                🎊 Web development event with javascript.
+                                organized by Midudev.
+                            </p>
+
                             <footer>
                                 <span className="text-zinc-400 text-sm">
                                     Improve web design based on the Figma.
