@@ -6,7 +6,7 @@ export default function Contributions() {
     return (
         <section className="group/contributions flex flex-col py-4 gap-4">
             <h2
-                className={` group-hover/contributions:text-[#9d4cfa] text-zinc-400 ${mplus1code.className}`}
+                className={` group-hover/contributions:text-[#9d4cfa] dark:text-zinc-400 text-zinc-600 ${mplus1code.className}`}
             >
                 / Contributions
             </h2>

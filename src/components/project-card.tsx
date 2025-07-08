@@ -18,7 +18,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={`/projects/${slug}`}
             >
                 <GlareCard>
-                    <div className=" relative h-full w-full rounded-xl border border-zinc-800">
+                    <div className=" relative h-full w-full rounded-xl border dark:border-zinc-800 border-zinc-400">
                         <MagicCard
                             blur={0.5}
                             borderWidth={1}

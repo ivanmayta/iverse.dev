@@ -21,7 +21,7 @@ export function Projects() {
                     className={`${mplus1code.className} flex items-center justify-between`}
                 >
                     <h2
-                        className={` group-hover/projects:text-[#9d4cfa] text-zinc-400`}
+                        className={` group-hover/projects:text-[#9d4cfa] dark:text-zinc-400 text-zinc-600`}
                     >
                         <span>/ Projects</span>
                     </h2>

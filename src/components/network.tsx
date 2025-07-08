@@ -51,7 +51,7 @@ export function Network() {
         >
             <div className={`${mplus1code.className} flex items-center`}>
                 <h2
-                    className={` group-hover/network:text-[#9d4cfa] text-zinc-400`}
+                    className={` group-hover/network:text-[#9d4cfa] dark:text-zinc-400 text-zinc-600`}
                 >
                     <span>/ Connect</span>
                 </h2>
