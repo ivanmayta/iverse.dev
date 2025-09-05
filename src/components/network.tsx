@@ -6,8 +6,8 @@ import { Cv } from "@/icons/cv"
 export function Network() {
     const networks = [
         {
-            name: "mayta.me",
-            url: "https://mayta.me",
+            name: "cv.iverse.dev",
+            url: "https://cv.iverse.dev",
             icon: <Cv />,
             color: " hover:text-fuchsia-500",
         },
