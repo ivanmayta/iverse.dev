@@ -26,15 +26,17 @@ export function Header() {
     ]
     return (
         <header
-            className={`${mplus1code.className} flex items-center gap-4 sm:gap-0 flex-col sm:flex-row sm:justify-between py-12`}
+            className={`${mplus1code.className} flex items-center gap-4 sm:gap-0 flex-col  sm:flex-row sm:justify-between py-12`}
         >
-            <h1 className="  flex items-center gap-2">
+            <h1 className="  flex items-center gap-2 group/header">
                 <Link href="/" className="flex items-center gap-2">
-                    <img
-                        src="/logo.svg"
-                        alt="iverse.dev"
-                        className="w-10 h-10 bg-white rounded-lg"
-                    />
+                    <div className="bg-white rounded-lg">
+                        <img
+                            src="/logo.svg"
+                            alt="iverse.dev"
+                            className="w-10 h-10 scale-120 group-hover/header:scale-130 transition-all duration-300 "
+                        />
+                    </div>
                     <span className="text-xl font-medium">iverse.dev</span>
                     <span className="text-zinc-400 hover:text-[#9d4cfa]">
                         {" "}
